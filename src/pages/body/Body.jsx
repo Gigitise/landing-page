@@ -1,4 +1,3 @@
-import React from 'react';  
 import './body.css';
 import Steps from '../../components/steps/Steps';
 import Faq from '../../components/faq/Faq';
@@ -48,7 +47,6 @@ const Body = () => {
                 <button>Reach out</button>
             </div> 
             <Faq />
-
             <br />
             <br />
         </div>
