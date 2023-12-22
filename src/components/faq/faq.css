@@ -1,11 +1,12 @@
 .faq {
-    margin: 1rem 0;
+    margin: 1rem 2rem;
 }
+
 .faq-content {
-    display: grid;
-    grid-template-columns: repeat(2, 45%);
-    justify-content: center;
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 
 .faq-content div {

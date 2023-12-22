@@ -1,4 +1,3 @@
-import React from 'react';  
 import './body.css';
 import Steps from '../../components/steps/Steps';
 import Faq from '../../components/faq/Faq';
@@ -11,7 +10,7 @@ const Body = () => {
     return (
         <div className='body'>
             <div className="search-content">
-                <input type="text" placeholder='Search solved essays from our archive...'/>
+                <input type="text" placeholder='Search For Essays'/>
             </div>
             <div className='common-services'>
                 <h2>Common services</h2>
@@ -48,7 +47,6 @@ const Body = () => {
                 <button>Reach out</button>
             </div> 
             <Faq />
-
             <br />
             <br />
         </div>

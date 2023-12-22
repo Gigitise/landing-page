@@ -1,8 +1,9 @@
 .steps {
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .steps div {
@@ -15,6 +16,7 @@
     align-items: center;
     justify-content: center;
     border: solid 1px var(--secondary-color);
+    max-width: 300px;
 }
 
 .steps div:hover {
