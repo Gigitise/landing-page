@@ -3,6 +3,7 @@
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .body h2 {
@@ -14,7 +15,7 @@
     justify-content: center;
 }
 
-.search-content input{
+.search-content input {
     position: relative;
     width: 35%;
     padding: 0.5rem 0.7rem;
@@ -30,10 +31,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .common-services .common-services-content {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 
@@ -52,15 +55,17 @@
 
 /*  */
 
-.body-content {
+.body-elements {
     display: flex;
     flex-direction: column;
+    width: 83.33vw;
+    margin: 0 auto;
 }
 
 .body-elements {
     display: flex;
     align-items: center;
-    justify-content: center;      
+    justify-content: center;
 }
 
 .body-elements div:nth-child(1) {
@@ -126,15 +131,10 @@ img {
     margin: 2rem 0;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    /* background-color: #f5f5f5; */
-    background-color: var(--secondary-color);
-    /* background-color: var(--primary-color); */
-    /* color: #fff;     */
-}
-
-.call-to-action {
     border: none;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
 }
 
 .call-to-action:hover {
@@ -152,4 +152,39 @@ img {
     background-color: var(--complementary);
     border: none;
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .body {
+        width: 83.33%;
+        margin: 0 auto;
+
+    }
+
+    .call-to-action {
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    input {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .common-services-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .common-services-content article {
+        width: 80vw;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .common-services-content article {
+        text-align: right;
+    }
 }
