@@ -1,9 +1,9 @@
 .body {
-    /* padding: 1rem; */
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    width: 83.33%;
+    margin: 10rem auto 2rem auto;
 }
 
 .body h2 {
@@ -11,13 +11,16 @@
 }
 
 .search-content {
+    margin-top: 15rem;
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .search-content input {
+    
     position: relative;
-    width: 35%;
+    width: 50%;
     padding: 0.5rem 0.7rem;
     border-radius: 2rem;
     border: solid 1px;
@@ -32,6 +35,29 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
+}
+
+.body-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.body-elements__mobile {
+    display: none;
+    background-image: url("https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100vw;
+    height: 60vh;
+}
+
+.body-elements img {
+    max-width: 350px;
 }
 
 .common-services .common-services-content {
@@ -53,23 +79,7 @@
     box-shadow: 0 8px 36px var(--secondary-color);
 }
 
-/*  */
-
-.body-elements {
-    display: flex;
-    flex-direction: column;
-    width: 83.33vw;
-    margin: 0 auto;
-}
-
-.body-elements {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .body-elements div:nth-child(1) {
-    /* background-image: url('https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe'); */
     position: relative;
     width: 45%;
     display: flex;
@@ -154,37 +164,59 @@ img {
     color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
-    .body {
-        width: 83.33%;
-        margin: 0 auto;
+.faq__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    }
-
+@media only screen and (max-width: 768px) {
     .call-to-action {
         flex-direction: column;
         padding: 2rem;
         align-items: center;
     }
-
-    input {
-        width: 200px;
+    .body-elements {
+        display: none;
+    }
+    .body-elements__mobile {
+        display: grid;
+        place-content: center;
+    }
+    .body-elements__mobile .body-slogan {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    .body-elements__mobile .body-slogan h1 {
+        color: rgba(0,0,0);
+    }
+    .body-elements__mobile .body-slogan article {
+        color: rgb(6, 7, 7);
+        font-size: 1.25rem;
+        font-weight: normal;
+        max-width: 300px;
+    }
+    /* .body-elements__mobile .body-slogan button {
+        
+    } */
+    .common-services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .common-services-content article {
+        width: 60vw;
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .common-services-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .common-services-content article {
-        width: 80vw;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .common-services-content article {
-        text-align: right;
+/* small screens */
+@media only screen and (max-width: 450px) {
+    .search-content input {
+        width: 100%;
     }
 }

@@ -1,21 +1,53 @@
 nav {
+    margin: 0 0px  1.5rem 0px;
+    padding: 0 1rem;
+    position: relative;
+    background-color: beige;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 1rem;
+    padding: 0 1.5rem;
+}
+
+nav .nav-logo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    padding: 3rem 1.5rem;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 2px;
+    margin-left: 0;
 }
 
-p {
-    text-align: center;
-    max-width: 500px;
+nav .nav-logo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
 }
-
-.nav-actions {
-    width: 35%;
+.nav-essays--actions__large {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 35%;
+}
+.nav-actions {
+    width: 20%;
+    display: flex;
     margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 .nav-actions button {
@@ -29,14 +61,77 @@ p {
     color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 768px) {
     .nav-actions {
-        width: 45%;
+        display: none;
+    }
+    .nav-essays--actions__large {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+    .mobilenav__container {
+        z-index: 10;
+        background: rgba(0,0,0,0.5);
+        top: 35px;
+        width: 100vw;
+        height: 100%;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .mobile__links {
+        margin-top: 1.25rem;
+        width: 80%;
+        height: 50%;
+        border: solid 5px #000;
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+        align-items: center;
+        border-radius: 25px;
+    }
+    .mobile__link--mininav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        width: 90%;
+    }
+    .nav-essays--actions {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        align-items: center;
+    }
+    .nav-actions__mobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 98%;
+    }
+    .nav-actions__mobile button {
+        border: none;
+        font-size: var(--fontsize-normal);
+        border-radius: 8px;
+    }
+    .nav-actions__mobile button:nth-child(1) {
+        background-color: var(--secondary-color);
+        color: #fff;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .nav-actions {
-        width: 75%;
+@media only screen and (max-width: 480px) {
+    .mobile__links {
+        width: 85%;
+        margin: auto;
+        align-self: center;
     }
 }
