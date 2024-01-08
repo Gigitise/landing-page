@@ -11,6 +11,7 @@
 .faq h4 {
     font-size: 1.25rem;
     font-weight: bold;
+    color: #eb7100
 }
 .faq-content div {
     width: 100%;
@@ -23,11 +24,13 @@
 .faq article {
     text-align: center;
     font-size: 1.25rem;
+   /*  color: #f7fafc; */
 }
 
 .faq button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: grey;
+    border: none;
+    background: #0360d1;
 }

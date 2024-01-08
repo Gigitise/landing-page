@@ -3,21 +3,33 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 2rem 0;
     gap: 2.25rem;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .footer-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: flex-start;
     padding: 1rem;
-    gap: 2rem;
 }
 
+.footer-links-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: start;
+}
 .footer div:nth-child(2) article {
     cursor: pointer;
 }

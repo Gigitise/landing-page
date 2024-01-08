@@ -18,7 +18,6 @@
 }
 
 .search-content input {
-    
     position: relative;
     width: 50%;
     padding: 0.5rem 0.7rem;
@@ -47,11 +46,11 @@
 
 .body-elements__mobile {
     display: none;
-    background-image: url("https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe");
+    /* background-image: url("https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    margin: 0; */
     width: 100vw;
     height: 60vh;
 }
@@ -63,7 +62,7 @@
 .common-services .common-services-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .common-services .common-services-content article {
@@ -172,6 +171,10 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+    .body {
+        width: 95vw;
+        margin: 10rem auto 2rem auto;
+    }
     .call-to-action {
         flex-direction: column;
         padding: 2rem;
@@ -187,26 +190,27 @@ img {
     .body-elements__mobile .body-slogan {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        margin: 0 auto 0 auto;
-        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        align-items: center;
         gap: 1.25rem;
     }
     .body-elements__mobile .body-slogan h1 {
+        text-align: center;
+        width: 100%;
         color: rgba(0,0,0);
     }
     .body-elements__mobile .body-slogan article {
         color: rgb(6, 7, 7);
         font-size: 1.25rem;
         font-weight: normal;
-        max-width: 300px;
+        width: 70%;
     }
-    /* .body-elements__mobile .body-slogan button {
-        
-    } */
+    .body-elements__mobile .body-slogan .hire-us {
+        text-align: center;
+    }
     .common-services-content {
         flex-direction: column;
-        align-items: center;
     }
     .common-services-content article {
         width: 60vw;
@@ -217,6 +221,21 @@ img {
 /* small screens */
 @media only screen and (max-width: 450px) {
     .search-content input {
+        width: 100%;
+    }
+    .body-elements__mobile .body-slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .body-elements__mobile .body-slogan h1 {
+        text-align: start;
+    }
+    .body-elements__mobile .body-slogan article{
+        width: 85%;
+    }
+    .call-to-action div {
         width: 100%;
     }
 }

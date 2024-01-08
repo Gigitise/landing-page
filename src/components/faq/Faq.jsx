@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import './faq.css';
-import { FaMinus, FaPlus } from "react-icons/fa6";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+
 
 const Faq = ( {question, response}) => {
     const [quiz, setQuiz] = useState(false);
@@ -12,7 +13,7 @@ const Faq = ( {question, response}) => {
                 <div>
                     <h4>{question}</h4>
                     <button type='button' onClick={() => setQuiz(!quiz)}>
-                        {quiz ? <FaMinus/> : <FaPlus/>}
+                        {quiz ? <FaAngleUp/> : <FaAngleDown/> }
                     </button>
                     
                 </div>
