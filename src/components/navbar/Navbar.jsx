@@ -1,7 +1,7 @@
 import './navbar.css';
 import logo from "../../assets/gigitise.svg"
-import { FaBars } from 'react-icons/fa';
-import { AiOutlineClose } from "react-icons/ai";
+import { TiThMenu } from "react-icons/ti";
+import { GrClose } from "react-icons/gr";
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -16,7 +16,6 @@ const Navbar = () => {
             <div className='nav-container'>
                 <div className='nav-logo'>
                     <img src={logo} alt="gigtise" />
-                    <p>gigitise</p>
                 </div>
                 <div className='nav-essays--actions__large'>
                     <li>solved Essays</li>
@@ -29,7 +28,7 @@ const Navbar = () => {
                 <div className='mobile-nav'>
                     <button type='menu' onClick={openMobileMenu}>
                         {
-                            mobileMenu ?<AiOutlineClose/>:<FaBars/>
+                            mobileMenu ?<GrClose />:<TiThMenu/>
                         }
                     </button>
                 </div>

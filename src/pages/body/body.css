@@ -47,10 +47,10 @@
 
 .body-elements__mobile {
     display: none;
-    background-image: url("https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe");
+    /* background-image: url("https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     margin: 0;
     width: 100vw;
     height: 60vh;
@@ -63,7 +63,7 @@
 .common-services .common-services-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .common-services .common-services-content article {
@@ -112,6 +112,7 @@ img {
 
 .promo {
     margin-top: 2rem;
+    width: 96vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,6 +173,10 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+    .body {
+        width: 95vw;
+        margin: 10rem auto 2rem auto;
+    }
     .call-to-action {
         flex-direction: column;
         padding: 2rem;
@@ -199,11 +204,11 @@ img {
         color: rgb(6, 7, 7);
         font-size: 1.25rem;
         font-weight: normal;
-        max-width: 300px;
+        /* max-width: 300px; */
     }
-    /* .body-elements__mobile .body-slogan button {
-        
-    } */
+    .body-elements__mobile .body-slogan button {
+        text-align: center;
+    }
     .common-services-content {
         flex-direction: column;
         align-items: center;
@@ -216,7 +221,41 @@ img {
 
 /* small screens */
 @media only screen and (max-width: 450px) {
+    .body{
+        width: 95vw;
+        margin: 10rem auto 2rem auto;
+    }
     .search-content input {
+        width: 100%;
+    }
+    .body-elements__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        margin-top: 2rem;
+        padding: 0;
+        width: 100vw;
+    }
+    .body-elements__mobile .body-slogan {
+        width: 100%;
+    }
+    .body-elements__mobile .body-slogan h1 {
+        width: 95%;
+        text-align: start;
+    }
+    .body-elements__mobile .body-slogan article {
+        width: 95%;
+        text-align: left;
+    }
+    .body-elements__mobile .body-slogan .hire-us {
+        text-align: center;
+    }
+    .call-to-action {
+        margin: 0;
+        z-index: 10;
+    }
+    .call-to-action div {
         width: 100%;
     }
 }
