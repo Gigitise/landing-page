@@ -47,13 +47,7 @@
 
 .body-elements__mobile {
     display: none;
-    /* background-image: url("https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     margin: 0;
-    width: 100vw;
-    height: 60vh;
 }
 
 .body-elements img {
@@ -188,6 +182,8 @@ img {
     .body-elements__mobile {
         display: grid;
         place-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     .body-elements__mobile .body-slogan {
         display: flex;
@@ -207,6 +203,9 @@ img {
         /* max-width: 300px; */
     }
     .body-elements__mobile .body-slogan button {
+        text-align: center;
+    }
+    .body-elements__mobile .body-slogan .hire-us {
         text-align: center;
     }
     .common-services-content {
@@ -250,6 +249,9 @@ img {
     }
     .body-elements__mobile .body-slogan .hire-us {
         text-align: center;
+    }
+    .promo button {
+        margin-bottom: 1.25rem;
     }
     .call-to-action {
         margin: 0;
