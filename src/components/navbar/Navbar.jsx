@@ -1,6 +1,6 @@
 import './navbar.css';
-import logo from "../../assets/gigitise.svg"
-import { TiThMenu } from "react-icons/ti";
+import logo from "../../assets/gigitise.svg";
+import { CiMenuBurger } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
 import { useState } from 'react';
 
@@ -26,9 +26,9 @@ const Navbar = () => {
                     <button>Login</button>
                 </div>
                 <div className='mobile-nav'>
-                    <button type='menu' onClick={openMobileMenu}>
+                    <button className="menu-toggle" type='menu' onClick={openMobileMenu}>
                         {
-                            mobileMenu ?<GrClose />:<TiThMenu/>
+                            mobileMenu ?<GrClose size={30}/>:<CiMenuBurger size={30}/>
                         }
                     </button>
                 </div>

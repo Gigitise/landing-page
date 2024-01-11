@@ -12,7 +12,7 @@ const Faq = ( {question, response}) => {
                 <div>
                     <h4>{question}</h4>
                     <button type='button' onClick={() => setQuiz(!quiz)}>
-                        {quiz ? <FaAngleUp/> : <FaAngleDown/> }
+                        {quiz ? <FaAngleUp size={25} color='#0360d1'/> : <FaAngleDown size={25} color='#0360d1'/> }
                     </button>
                     
                 </div>

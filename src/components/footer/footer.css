@@ -4,9 +4,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0.5rem 1rem;
     gap: 2.25rem;
-    padding: 4rem 2rem;
 }
 
 .footer-container {
