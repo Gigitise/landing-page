@@ -16,7 +16,6 @@ const Faq = ( {question, response}) => {
                     </button>
                     
                 </div>
-                
             </div>
             {quiz && <article>
                     {response}
