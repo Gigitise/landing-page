@@ -2,6 +2,7 @@ import './footer.css';
 import { FaInstagram, FaFacebook, FaPinterest, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <footer className='footer'>            
             <h2>Flexipro</h2>
@@ -32,7 +33,7 @@ const Footer = () => {
                     <a href="#github"><FaGithub/></a>
                 </div>
             </div>
-            <article>&copy; Flexipro-2023</article>
+            <article>&copy; Flexipro-{year}</article>
         </footer>
     );
 }
