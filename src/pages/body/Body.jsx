@@ -58,11 +58,14 @@ const Body = () => {
             </div>
             <section className='faq__section'>
                 <h2>Frequently Asked Questions</h2>
-                {
-                    questions.map((question) => ( 
-                        <Faq key={question.id} {...question}/>
-                    ))
-                }
+                <div className='faq__content'>
+                    {
+                        questions.map((question) => ( 
+                            <Faq key={question.id} {...question}/>
+                        ))
+                    }
+                </div>
+                
             </section>
             
             <br />

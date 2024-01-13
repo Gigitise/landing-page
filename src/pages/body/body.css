@@ -166,6 +166,12 @@ img {
     justify-content: center;
     gap: 10px;
 }
+.faq__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 3rem;
+}
 
 @media only screen and (max-width: 768px) {
     .body {
@@ -216,6 +222,9 @@ img {
     .common-services-content article {
         width: 60vw;
         text-align: center;
+    }
+    .faq__content {
+        grid-template-columns: 1fr;
     }
 }
 
