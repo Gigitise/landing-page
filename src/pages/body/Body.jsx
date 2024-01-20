@@ -17,7 +17,7 @@ const Body = () => {
                 <div className='body-slogan'>
                     <h1>Get Quality Writing</h1>
                     <article>
-                        Welcome to Flexypro, your ultimate solution hub for assignments across perse fields like essays, programming, engineering, accounting, dissertations, and more.
+                        Welcome to Gigitise, your ultimate solution hub for assignments across perse fields like essays, programming, engineering, accounting, dissertations, and more.
                     </article>
                     <Link to='http://localhost:5173/app' className='hire-us' onClick={()=>navigate('')}>Hire Us</Link>
                 </div>
@@ -27,7 +27,7 @@ const Body = () => {
                 <div className='body-slogan'>
                     <h1>Get Quality Writing</h1>
                     <article>
-                        Welcome to Flexypro, your ultimate solution hub for assignments across perse fields like essays, programming, engineering, accounting, dissertations, and more.
+                        Welcome to Gigitise, your ultimate solution hub for assignments across perse fields like essays, programming, engineering, accounting, dissertations, and more.
                     </article>
                     <Link to='http://localhost:5173/app' className='hire-us' onClick={()=>navigate('')}>Hire Us</Link>
                 </div>

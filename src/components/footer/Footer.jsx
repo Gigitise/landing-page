@@ -5,7 +5,7 @@ const Footer = () => {
     const year = new Date().getFullYear();
     return (
         <footer className='footer'>            
-            <h2>Flexipro</h2>
+            <h2>Gigitise</h2>
             <div className='footer-container'>
                 <div className='footer-links'>
                     <article>About us</article>
@@ -26,14 +26,14 @@ const Footer = () => {
                     <article>Additional</article>
                 </div>
                 <div className='footer-links-social'>
-                    <a href="#facebook"><FaFacebook/></a>
-                    <a href="#insta"><FaInstagram/></a>
-                    <a href="#pinterest"><FaPinterest/></a>
-                    <a href="#x-app"><FaTwitter/></a>
-                    <a href="#github"><FaGithub/></a>
+                    <a href="#facebook"><FaFacebook color='#0360d1'/></a>
+                    <a href="#insta"><FaInstagram color='#0360d1'/></a>
+                    <a href="#pinterest"><FaPinterest color='#0360d1'/></a>
+                    <a href="#x-app"><FaTwitter color='#0360d1'/></a>
+                    <a href="#github"><FaGithub color='#0360d1'/></a>
                 </div>
             </div>
-            <article>&copy; Flexipro-{year}</article>
+            <article>&copy; Gigitise-{year}</article>
         </footer>
     );
 }
