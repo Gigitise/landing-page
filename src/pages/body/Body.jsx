@@ -1,6 +1,8 @@
 import './body.css';
 import Steps from '../../components/steps/Steps';
 import Faq from '../../components/faq/Faq';
+import Services from '../../components/our-services/Services';
+import Process from '../../components/Step-to-place/Steps';
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 const Body = () => {
@@ -38,6 +40,8 @@ const Body = () => {
                 <h2>Get a complete paper from as low as <span>$10.00</span></h2>
                 <button>Order Now</button>
             </div>
+            <Services  />
+            <Process />
             <div className='call-to-action'>
                 <div>
                     <h2>With Flexypro, all your assignments are now doable! <br />
@@ -46,6 +50,7 @@ const Body = () => {
                 </div>
                 <button>Reach out</button>
             </div> 
+            
             <Faq />
             <br />
             <br />
