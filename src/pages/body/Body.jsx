@@ -1,5 +1,6 @@
 import './body.css';
 import Steps from '../../components/steps/Steps';
+import Reviews from '../../components/reviews/Reviews';
 import Faq from '../../components/faq/Faq';
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
@@ -46,6 +47,7 @@ const Body = () => {
                 </div>
                 <button>Reach out</button>
             </div> 
+            <Reviews/>
             <Faq />
             <br />
             <br />
