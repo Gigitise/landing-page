@@ -1,30 +1,41 @@
+import { IoMdArrowDropdown } from "react-icons/io";
+import { useState } from 'react';
 import './faq.css';
 
 const Faq = () => {
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const handleClick = (index) => {
+        if (openIndex === index) {
+            setOpenIndex(null);
+        } else {
+            setOpenIndex(index);
+        }
+    };
+
+    const faqs = [
+        { question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum?', answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod accusamus, mollitia voluptatibus ullam commodi? Necessitatibus magnam corporis iste officiis.' },
+        { question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum?', answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod accusamus, mollitia voluptatibus ullam commodi? Necessitatibus magnam corporis iste officiis.' },
+        { question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum?', answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod accusamus, mollitia voluptatibus ullam commodi? Necessitatibus magnam corporis iste officiis.' },
+    ];
+
     return (
-        <div className='faq'>
-            <h2>Frequently Asked Questions</h2>
-            <div className='faq-content'>
-                <div className='faq-content-cont'>
-                    <div className='faq-content-item'>
-                        <strong>Our pricing model</strong>
-                        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error commodi dicta.</article>
+        <div className="faq-main-container">
+            <h1>Frequently Asked Questions</h1>
+            <div className="faq-container">
+                {faqs.map((faq, index) => (
+                    <div className="faq" key={index}>
+                        <button className="qstn" onClick={() => handleClick(index)}>
+                            {faq.question}
+                            <IoMdArrowDropdown className="drop-icon"/>
+                        </button>
+                        {openIndex === index && (
+                            <div className="panel">
+                                <p>{faq.answer}</p>
+                            </div>
+                        )}
                     </div>
-                    <div className='faq-content-item'>
-                        <strong>Our pricing model</strong>
-                        <article>Lorem ipsum dolor sit amet consectetur adipisicin commodi dicta.</article>
-                    </div>
-                </div>
-                <div className='faq-content-cont'>
-                    <div className='faq-content-item'>
-                        <strong>Our pricing model</strong>
-                        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error commodi dicta.</article>
-                    </div>
-                    <div className='faq-content-item'>
-                        <strong>Our pricing model</strong>
-                        <article>Lorem ipsum dolor sit amet conse elit. Non error commodi dicta.</article>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
