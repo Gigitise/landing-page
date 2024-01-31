@@ -5,6 +5,7 @@ import Services from '../../components/our-services/Services';
 import Process from '../../components/Step-to-place/Steps';
 import Banner from '../../components/Banner/Banner';
 import Stats from '../../components/stats/Stats';
+import Comprehensive from '../../components/comprehensive/Comprehensive';
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
@@ -39,6 +40,7 @@ const Body = () => {
             */}
             <Stats  />
             <Services  />
+            <Comprehensive />
             <Process />
             <div className='call-to-action'>
                 <div>
