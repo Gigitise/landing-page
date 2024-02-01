@@ -36,6 +36,7 @@
 
 .common-services .common-services-content {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
 }
@@ -152,6 +153,17 @@ img {
     background-color: var(--complementary);
     border: none;
     color: #fff;
+}
+@media screen and (max-width: 728px) {
+    .search-content input {
+        width: 70%;
+    }
+    .common-services{
+        margin-bottom: 2rem;
+    }
+    .common-services .common-services-content {
+        gap: 2rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
