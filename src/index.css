@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   --fontsize-normal: 0.95rem;
   --fontsize-small:  0.90rem;
