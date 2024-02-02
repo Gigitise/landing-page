@@ -1,5 +1,6 @@
 import './body.css';
 import Steps from '../../components/steps/Steps';
+import Reviews from '../../components/reviews/Reviews';
 import Faq from '../../components/faq/Faq';
 import Services from '../../components/our-services/Services';
 import Process from '../../components/Step-to-place/Steps';
@@ -49,8 +50,8 @@ const Body = () => {
                     </h2>
                 </div>
                 <button>Reach out</button>
-            </div> 
-            
+            </div>             
+            <Reviews/>
             <Faq />
             <br />
             <br />
