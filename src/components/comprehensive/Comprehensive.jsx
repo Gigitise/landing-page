@@ -84,25 +84,25 @@ const Comprehensive = () => {
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'paper' && 'w--current'}`}
                   onClick={() => handleTabChange('paper')}
                 >
-                  <div>Paper Work</div>
+                  <div>service 4</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'academic' && 'w--current'}`}
                   onClick={() => handleTabChange('academic')}
                 >
-                  <div>Academic</div>
+                  <div>service 5</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'other' && 'w--current'}`}
                   onClick={() => handleTabChange('other')}
                 >
-                  <div>Other Assignments</div>
+                  <div>service 6</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'homework' && 'w--current'}`}
                   onClick={() => handleTabChange('homework')}
                 >
-                  <div>Homework</div>
+                  <div>service 7</div>
                 </a>
               </>
             )}
@@ -131,25 +131,25 @@ const Comprehensive = () => {
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'paper' && 'w--current'}`}
                   onClick={() => handleTabChange('paper')}
                 >
-                  <div>Paper Work</div>
+                  <div>service 4</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'academic' && 'w--current'}`}
                   onClick={() => handleTabChange('academic')}
                 >
-                  <div>Academic</div>
+                  <div>service 5</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'other' && 'w--current'}`}
                   onClick={() => handleTabChange('other')}
                 >
-                  <div>Other Assignments</div>
+                  <div>service 6</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'homework' && 'w--current'}`}
                   onClick={() => handleTabChange('homework')}
                 >
-                  <div>Homework</div>
+                  <div>service 7</div>
                 </a>
               </>
             ) : (
