@@ -4,6 +4,9 @@ footer {
     flex-direction: column;
     padding: 2rem;
 }
+footer h3 {
+    color: var(--secondary-color);
+}
 
 .container {
     display: flex;
@@ -42,11 +45,22 @@ li :hover {
 }
 
 .subscription input {
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
     flex: 1;
+    margin-right: 0.7rem;
+}
+.subscription input:focus {
+    outline: none;
 }
 
 .subscription button {
     padding: 0.5rem;
+    border: none;
+    color: #f5f5f5;
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
 }
 
 .social-icons {
@@ -62,4 +76,8 @@ li :hover {
     padding: 0.6rem;
     border-radius: 50%;
     font-size: 1.3rem;
+}
+
+.social-icons a:hover {
+    background-color: var(--secondary-color);
 }

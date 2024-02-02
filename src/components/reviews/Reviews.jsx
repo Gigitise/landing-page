@@ -1,4 +1,5 @@
-import { IoIosStarOutline } from "react-icons/io";
+import { FaStar } from "react-icons/fa";
+
 import "./reviews.css"
 
 const Reviews = () =>{
@@ -8,9 +9,9 @@ const Reviews = () =>{
                 <h1>Reviews from users</h1>
                 <h3>1000+ Reviews
                     <span>
-                        <IoIosStarOutline />
-                        <IoIosStarOutline />
-                        <IoIosStarOutline />
+                        <FaStar className="icon"/>
+                        <FaStar className="icon"/>
+                        <FaStar className="icon"/>
                     </span>
                 </h3>
             </div>
