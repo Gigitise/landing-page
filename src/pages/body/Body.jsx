@@ -16,9 +16,6 @@ const Body = () => {
 
     return (
         <div className='body'>
-            <div className="search-content">
-                <input type="text" placeholder='Search For Essays'/>
-            </div>
             <div className='common-services'>
                 <h2>Common services</h2>
                 <div className='common-services-content'>
