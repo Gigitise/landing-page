@@ -84,43 +84,43 @@ const Comprehensive = () => {
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'paper' && 'w--current'}`}
                   onClick={() => handleTabChange('paper')}
                 >
-                  <div>Paper Work</div>
+                  <div>service 4</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'academic' && 'w--current'}`}
                   onClick={() => handleTabChange('academic')}
                 >
-                  <div>Academic</div>
+                  <div>service 5</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'other' && 'w--current'}`}
                   onClick={() => handleTabChange('other')}
                 >
-                  <div>Other Assignments</div>
+                  <div>service 6</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'homework' && 'w--current'}`}
                   onClick={() => handleTabChange('homework')}
                 >
-                  <div>Homework</div>
+                  <div>service 7</div>
                 </a>
               </>
             )}
             {isMobile && (
               <div className="dropdown-toggle" onClick={toggleDropdown}>
-                Toggle Dropdown
-                <div>
+                {activeTab} 
+                <div className='flex justify-end pb-5 pr-1'>
                   <svg 
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  strokeWidth={1.5} 
-                  stroke="currentColor" 
-                  className="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    strokeWidth={1.5} 
+                    stroke="currentColor" 
+                    className="w-6 h-6"
                   >
-                <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-              </svg>
-            </div>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </div>
               </div>
             )}
           </div>
@@ -131,25 +131,25 @@ const Comprehensive = () => {
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'paper' && 'w--current'}`}
                   onClick={() => handleTabChange('paper')}
                 >
-                  <div>Paper Work</div>
+                  <div>service 4</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'academic' && 'w--current'}`}
                   onClick={() => handleTabChange('academic')}
                 >
-                  <div>Academic</div>
+                  <div>service 5</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'other' && 'w--current'}`}
                   onClick={() => handleTabChange('other')}
                 >
-                  <div>Other Assignments</div>
+                  <div>service 6</div>
                 </a>
                 <a
                   className={`offer__link w-inline-block w-tab-link ${activeTab === 'homework' && 'w--current'}`}
                   onClick={() => handleTabChange('homework')}
                 >
-                  <div>Homework</div>
+                  <div>service 7</div>
                 </a>
               </>
             ) : (

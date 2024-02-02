@@ -2,39 +2,30 @@ import React from 'react'
 
 const Banner = () => {
   return (
- <section className="relative bg-[url(https://img.freepik.com/free-vector/studying-concept-illustration_114360-1301.jpg?w=740&t=st=1699562478~exp=1699563078~hmac=f7e370e5ddf75e11e9d7d411932c595f3642961775fad204b6be5a17ed4f9dbe)] bg-cover bg-center bg-no-repeat">
-  <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
-
-  <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-    <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      <h1 className="text-3xl  font-extrabold sm:text-5xl">
-      Get Quality Writing
-
-      </h1>
-
-      <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
-        numquam ea!
-      </p>
-
-      <div className="mt-8 flex flex-wrap gap-4 text-center">
-        <a
-          href="#"
-          className="block w-full rounded bg-blue-400 px-12 py-3 text-sm font-medium text-white shadow focus:outline-none focus:ring sm:w-auto"
-        >
-          Get Started
+    <div className=" bg-slate-200" style={{ position: "relative", width: "100%", zIndex: 20, minHeight: "100%", display: "flex", alignItems: "stretch", justifyContent: "stretch", color: "rgb(0, 0, 0)" }}>
+  <div style={{ width: "100%", zIndex: 20 }}>
+    <div className="flex md:flex-row flex-col w-full mx-auto px-8 lg:px-10 max-w-[1600px] items-center pt-10 md:py-0">
+      <div className="md:w-1/2 items-center pr-8 flex-column relative z-10">
+        <h1 className="text-[1em] leading-[1em] font-bold mb-3" style={{ fontSize: "80px" }}>TITLE HERE</h1>
+        <div className="mt-2 mb-5 max-w-[400px] leading-[1.6em]">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus cum quo facilis. Ea laboriosam accusantium deleniti placeat.</p>
+        </div>
+        <a className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-blue-400 hover:bg-gradient-to-b dark:shadow-indigo-900 shadow-indigo-200 hover:shadow-2xl hover:shadow-indigo-400 hover:-translate-y-px " href="">
+         <p className='text-center'>Get started</p> 
         </a>
-
-        <a
-          href="#"
-          className="block w-full rounded bg-white  px-12 py-3 text-sm font-medium text-blue-400 shadow  focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
-        >
-          Learn More
-        </a>
+      </div>
+      <div className="self-end md:w-8/12 w-full pt-10 img-container img-contain md:py-0">
+        <figure className="max-w-none w-full">
+          <picture>
+            <img src="https://img.freepik.com/free-vector/telecommuting-concept-smiley-man_23-2148497411.jpg?w=740&t=st=1706857417~exp=1706858017~hmac=a0b823ff646c0a9cd6aae69f5db1947c7ebbe6049c57fc4a30c561e79aba6ecf" alt="" width="768" height="639" loading="lazy" />
+          </picture>
+          <figcaption></figcaption>
+        </figure>
       </div>
     </div>
   </div>
-</section>
+</div>
+
   )
 }
 
