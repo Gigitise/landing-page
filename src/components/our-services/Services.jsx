@@ -2,14 +2,14 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className=" py-16">
-    <div className="container mx-auto px-4">
-    <header className="text-center">
-      <h2 className="text-2xl font-bold text-gray-600 sm:text-3xl">Our Services</h2>
-      <p className="mx-auto mt-4 max-w-md text-gray-500">
-      It is a long established fact that a reader will be distracted by the readable
-      </p>
-    </header>
+    <div className=" py-16 sm:py-11">
+    <div className="mx-auto px-6 lg:px-8 ">
+    <header className="text-center mb-20">
+          <h2 className="text-2xl font-bold text-gray-600 sm:text-3xl">Our Services</h2>
+          <p className="mx-auto mt-4 max-w-md text-gray-500">
+            It is a long established fact that a reader will be distracted by the readable
+          </p>
+        </header>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="relative overflow-hidden">
@@ -26,7 +26,7 @@ const Services = () => {
                     <a href='' className="text-sky-600  py-2 px-4 ">Learn more</a>
                 </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-lg p-4">
                 <div className="relative overflow-hidden">
                     <img className="object-cover w-full h-full" src="https://static.startuptalky.com/2021/10/Best-Practices-for-Finding-and-Hiring-Freelancers-startuptalky.jpg" alt="Product" />
                     <div className="absolute inset-0 bg-black opacity-40"></div>

@@ -108,19 +108,19 @@ const Comprehensive = () => {
             )}
             {isMobile && (
               <div className="dropdown-toggle" onClick={toggleDropdown}>
-                Toggle Dropdown
-                <div>
+                {activeTab} 
+                <div className='flex justify-end pb-5 pr-1'>
                   <svg 
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  strokeWidth={1.5} 
-                  stroke="currentColor" 
-                  className="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    strokeWidth={1.5} 
+                    stroke="currentColor" 
+                    className="w-6 h-6"
                   >
-                <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-              </svg>
-            </div>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </div>
               </div>
             )}
           </div>
