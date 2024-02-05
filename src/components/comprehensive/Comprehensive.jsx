@@ -107,9 +107,9 @@ const Comprehensive = () => {
               </>
             )}
             {isMobile && (
-              <div className="dropdown-toggle" onClick={toggleDropdown}>
+              <div className="flex items-center justify-between space-x-5 bg-white px-4" onClick={toggleDropdown}>
                 {activeTab} 
-                <div className='flex justify-end pb-5 pr-1'>
+                <div className='flex justify-end pb-3 '>
                   <svg 
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none" 
