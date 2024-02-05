@@ -16,7 +16,7 @@ const Banner = () => {
         <div className="mt-2 mb-5 max-w-[400px] leading-[1.6em]">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minus cum quo facilis. Ea laboriosam accusantium deleniti placeat.</p>
         </div>
-        <a className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-blue-400 hover:bg-gradient-to-b dark:shadow-indigo-900 shadow-indigo-200 hover:shadow-2xl hover:shadow-indigo-400 hover:-translate-y-px " href="">
+        <a className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-blue-400  hover:-translate-y-px " href="">
          <p className='text-center'>Get started</p> 
         </a>
       </div>
