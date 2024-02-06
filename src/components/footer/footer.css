@@ -1,119 +1,120 @@
 footer {
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
 footer h3 {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    padding: 0.8rem 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem 0;
 }
 
 .container > div {
-    flex: 1;  
+  flex: 1;
 }
 
 .container > div:first-child {
-    flex: 2;  
+  flex: 2;
 }
 
 a {
-    text-decoration: none;  
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 ul li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li :hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .subscription {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2rem;
+  width: 100%;
 }
 
 .subscription input {
-    border-radius: 0.5rem;
-    border: 1px solid var(--secondary-color);
-    padding: 0.5rem;
-    flex: 1;
-    margin-right: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem;
+  flex: 1;
+  margin-right: 0.7rem;
 }
 .subscription input:focus {
-    outline: none;
+  outline: none;
 }
 
 .subscription button {
-    padding: 0.5rem;
-    border: none;
-    color: #f5f5f5;
-    border-radius: 0.5rem;
-    background-color: var(--secondary-color);
+  padding: 0.5rem;
+  border: none;
+  color: #f5f5f5;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
 }
 
 .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .social-icons a {
-    display: flex;
-    color: #f5f5f5;
-    background-color: #808080;
-    padding: 0.6rem;
-    border-radius: 50%;
-    font-size: 1.3rem;
+  display: flex;
+  color: #f5f5f5;
+  background-color: #808080;
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
 }
 
 .social-icons a:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 @media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    footer h3 {
-        margin: 1rem 0;
-    }
-    .subscription{ 
-        padding-bottom: 1rem;
-    }
-    .social-icons {
-        padding-top: 1rem;
-    }
-    .social-icons a {
-        font-size: 1rem;
-    }
+  .container {
+    flex-direction: column;
+  }
+  footer h3 {
+    margin: 1rem 0;
+  }
+  .subscription {
+    padding-bottom: 1rem;
+  }
+  .social-icons {
+    padding-top: 1rem;
+  }
+  .social-icons a {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-    .social-icons a {
-        font-size: 0.8rem;
-    }
+  .container {
+    flex-direction: column;
+  }
+  .social-icons a {
+    font-size: 0.8rem;
+  }
 }
 @media only screen and (max-width: 480px) {
-    .subscription {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .subscription input {
-        width: 100%;
-    }
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .subscription input {
+    width: 100%;
+  }
 }

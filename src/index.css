@@ -4,20 +4,20 @@
 
 * {
   --fontsize-normal: 0.95rem;
-  --fontsize-small:  0.90rem;
-  --primary-color:#0360d1;
+  --fontsize-small: 0.9rem;
+  --primary-color: #0360d1;
   /* --secondary-color:#a7caff; */
   --secondary-color: #7fc2f5;
-  --complementary:#eb7100;
-  --text-color:#535354;
+  --complementary: #eb7100;
+  --text-color: #535354;
   --background: #f7fafc;
-  --green-var:#14a014;
+  --green-var: #14a014;
 }
 
 :root {
-  font-family:'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  font-weight: 300;  
+  font-weight: 300;
   font-size: var(--fontsize-normal);
   color: var(--text-color);
   letter-spacing: 0.2px;
@@ -36,6 +36,57 @@ button {
 }
 
 h1 {
-  margin: 0;
-  padding: 0;
+  line-height: 1.3 !important;
+}
+
+.description {
+  font-size: large;
+}
+.img-container figure {
+  display: flex;
+  justify-content: center;
+}
+
+.stats {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats h1 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.stats dl {
+  display: flex;
+  position: inherit;
+  width: 100%;
+}
+
+.competitive {
+  padding: 4rem;
+}
+
+.competitive h2 {
+  margin-bottom: 2rem;
+}
+
+.competitive-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.5rem;
+}
+
+.competitive-items h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.competitive-items div div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }

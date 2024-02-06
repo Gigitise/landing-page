@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './Comprehensive.css';
+import React, { useState, useEffect } from "react";
+import "./Comprehensive.css";
 
 const Comprehensive = () => {
-  const [activeTab, setActiveTab] = useState('paper');
+  const [activeTab, setActiveTab] = useState("paper");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -11,11 +11,11 @@ const Comprehensive = () => {
       setIsMobile(window.innerWidth <= 767);
     };
 
-    handleResize(); 
-    window.addEventListener('resize', handleResize);
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -25,7 +25,7 @@ const Comprehensive = () => {
   };
 
   const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen); 
+    setDropdownOpen(!dropdownOpen);
   };
 
   const tabContents = {
@@ -70,9 +70,10 @@ const Comprehensive = () => {
   return (
     <div>
       <div className="intro">
-        <h2 className="intro__heading">Comprehensive services</h2>
+        <h2 className="intro__heading mt-4">Unlock new talent freelancers</h2>
         <p className="intro__subheading">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Empower your gigs with our elite freelancers. Tap into a network of
+          seasoned professionals to elevate your work
         </p>
       </div>
       <div className="offer">
@@ -81,44 +82,59 @@ const Comprehensive = () => {
             {!isMobile && (
               <>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'paper' && 'w--current'}`}
-                  onClick={() => handleTabChange('paper')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "paper" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("paper")}
                 >
                   <div>service 4</div>
                 </a>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'academic' && 'w--current'}`}
-                  onClick={() => handleTabChange('academic')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "academic" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("academic")}
                 >
                   <div>service 5</div>
                 </a>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'other' && 'w--current'}`}
-                  onClick={() => handleTabChange('other')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "other" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("other")}
                 >
                   <div>service 6</div>
                 </a>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'homework' && 'w--current'}`}
-                  onClick={() => handleTabChange('homework')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "homework" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("homework")}
                 >
                   <div>service 7</div>
                 </a>
               </>
             )}
             {isMobile && (
-              <div className="flex items-center justify-between space-x-5 bg-white px-4" onClick={toggleDropdown}>
-                {activeTab} 
-                <div className='flex justify-end pb-3 '>
-                  <svg 
+              <div
+                className="flex items-center justify-between space-x-5 bg-white px-4"
+                onClick={toggleDropdown}
+              >
+                {activeTab}
+                <div className="flex justify-end pb-3 ">
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    strokeWidth={1.5} 
-                    stroke="currentColor" 
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
                     className="w-6 h-6"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
                   </svg>
                 </div>
               </div>
@@ -128,26 +144,34 @@ const Comprehensive = () => {
             {isMobile && dropdownOpen ? (
               <>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'paper' && 'w--current'}`}
-                  onClick={() => handleTabChange('paper')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "paper" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("paper")}
                 >
                   <div>service 4</div>
                 </a>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'academic' && 'w--current'}`}
-                  onClick={() => handleTabChange('academic')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "academic" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("academic")}
                 >
                   <div>service 5</div>
                 </a>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'other' && 'w--current'}`}
-                  onClick={() => handleTabChange('other')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "other" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("other")}
                 >
                   <div>service 6</div>
                 </a>
                 <a
-                  className={`offer__link w-inline-block w-tab-link ${activeTab === 'homework' && 'w--current'}`}
-                  onClick={() => handleTabChange('homework')}
+                  className={`offer__link w-inline-block w-tab-link ${
+                    activeTab === "homework" && "w--current"
+                  }`}
+                  onClick={() => handleTabChange("homework")}
                 >
                   <div>service 7</div>
                 </a>
