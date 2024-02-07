@@ -12,15 +12,17 @@ import Competitive from "../../components/competitive-edge/Competitive";
 const Body = () => {
   return (
     <div className="body">
-      <Banner />
-      <Services />
-      <Comprehensive />
-      <Competitive />
-      <Process />
-      <Reviews />
-      <Faq />
-      <br />
-      <br />
+      <section className="wrapper">
+        <Banner />
+        <Services />
+        <Comprehensive />
+        <Competitive />
+        <Process />
+        <Reviews />
+        <Faq />
+        <br />
+        <br />
+      </section>
     </div>
   );
 };
