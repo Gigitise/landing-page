@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import "./reviews.css";
 import { FaQuoteLeft } from "react-icons/fa";
+import { services } from "../../utils/utilities";
 
 const Reviews = () => {
   return (

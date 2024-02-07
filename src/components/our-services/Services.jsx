@@ -6,7 +6,7 @@ const Services = () => {
       <div className="mx-auto px-6 lg:px-8 ">
         <header className="text-center mb-5">
           <h2 className="intro__heading">Discover our top rated services</h2>
-          <p className="mx-auto mt-4 max-w-md text-gray-500">
+          <p className=" mx-auto mt-4 max-w-md text-gray-500">
             Find expert freelancers where skilled professional awat to tackle
             your assignments
           </p>
@@ -29,7 +29,7 @@ const Services = () => {
             <h3 className="text-xl  text-gray-600 text-center mt-4 font-inter font-bold">
               Essay writing
             </h3>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className=" text-center text-gray-500 text-sm mt-2">
               Get ahead in academia with our essay writing service. Our
               customers deliver top-notch custom essay tailored to your unique
               needs
@@ -57,7 +57,7 @@ const Services = () => {
             <h3 className="text-xl  text-gray-600 text-center mt-4 font-inter font-bold">
               Programming & Technicals
             </h3>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-center text-gray-500 text-sm mt-2">
               Your premier destination for top-tier coding solutions. Whether
               you need a web app or software solutions, achieve it with our
               programmers.
@@ -85,7 +85,7 @@ const Services = () => {
             <h3 className="text-xl  text-gray-600 text-center mt-4 font-inter font-bold">
               Homework & assignments
             </h3>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-center text-gray-500 text-sm mt-2">
               Excel yoour academic journey with our comprehensive assignment
               assistance. Our academic experts provide tailored solutions
               accross diverse subjects

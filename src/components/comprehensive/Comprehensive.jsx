@@ -71,7 +71,7 @@ const Comprehensive = () => {
     <div>
       <div className="intro">
         <h2 className="intro__heading mt-4">Unlock new talent freelancers</h2>
-        <p className="intro__subheading">
+        <p className="intro__subheading   mx-auto mt-4 max-w-md text-gray-500">
           Empower your gigs with our elite freelancers. Tap into a network of
           seasoned professionals to elevate your work
         </p>
