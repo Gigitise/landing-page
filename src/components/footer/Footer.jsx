@@ -8,7 +8,7 @@ import "./footer.css";
 const Footer = ({openModal}) => {
   return (
     <footer>
-      <div className="container">
+      <div className="container info">
         <div>
           <h3>About</h3>
           <p>
