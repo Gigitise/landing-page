@@ -32,7 +32,7 @@ const Steps = () => {
             <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
               Create your gig
             </p>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-gray-500 text-sm mt-2 text-center">
               Fill a form about your gig. Some of the details we need details
               like instructions, and deadline.
             </p>
@@ -63,7 +63,7 @@ const Steps = () => {
             <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
               Assign freelancer
             </p>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-gray-500 text-sm mt-2 text-center">
               View freelancer's profile, review and allocate them the gig you
               created.
             </p>
@@ -93,7 +93,7 @@ const Steps = () => {
             <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
               Get task done
             </p>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-gray-500 text-sm mt-2 text-center">
               Freelancers complete the task on time and upload it. Download the
               solution and check out on satisfaction.
             </p>
