@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Comprehensive.css";
+import { services } from "../../utils/utilities";
 
 const Comprehensive = () => {
-  const [activeTab, setActiveTab] = useState("paper");
+  const [activeTab, setActiveTab] = useState("Writing");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -28,44 +29,8 @@ const Comprehensive = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  const tabContents = {
-    paper: (
-      <div className="offer__wrap">
-        <div className="offer__text--more w-richtext">
-          <ul>
-            <li>Literature review</li>
-            <li>Business plan</li>
-            <li>Research proposal</li>
-            <li>Book / movie review</li>
-            <li>Editing and proofreading</li>
-            <li>Reflective writing</li>
-            <li>Thesis / dissertation</li>
-          </ul>
-        </div>
-      </div>
-    ),
-    academic: (
-      <div className="offer__wrap">
-        <div className="offer__text--more w-richtext">
-          <p>Content for academic tab goes here...</p>
-        </div>
-      </div>
-    ),
-    other: (
-      <div className="offer__wrap">
-        <div className="offer__text--more w-richtext">
-          <p>Content for other assignments tab goes here...</p>
-        </div>
-      </div>
-    ),
-    homework: (
-      <div className="offer__wrap">
-        <div className="offer__text--more w-richtext">
-          <p>Content for homework tab goes here...</p>
-        </div>
-      </div>
-    ),
-  };
+
+
 
   return (
     <div>
@@ -81,38 +46,17 @@ const Comprehensive = () => {
           <div className="offer__menu w-tab-menu">
             {!isMobile && (
               <>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "paper" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("paper")}
-                >
-                  <div>service 4</div>
-                </a>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "academic" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("academic")}
-                >
-                  <div>service 5</div>
-                </a>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "other" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("other")}
-                >
-                  <div>service 6</div>
-                </a>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "homework" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("homework")}
-                >
-                  <div>service 7</div>
-                </a>
+                {services.map((service, index) => (
+                  <a
+                    key={index}
+                    className={`offer__link w-inline-block w-tab-link ${
+                      activeTab === service.category && "w--current"
+                    }`}
+                    onClick={() => handleTabChange(service.category)}
+                  >
+                    <div>{service.category}</div>
+                  </a>
+                ))}
               </>
             )}
             {isMobile && (
@@ -143,41 +87,30 @@ const Comprehensive = () => {
           <div className="offer__content w-tab-content">
             {isMobile && dropdownOpen ? (
               <>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "paper" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("paper")}
-                >
-                  <div>service 4</div>
-                </a>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "academic" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("academic")}
-                >
-                  <div>service 5</div>
-                </a>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "other" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("other")}
-                >
-                  <div>service 6</div>
-                </a>
-                <a
-                  className={`offer__link w-inline-block w-tab-link ${
-                    activeTab === "homework" && "w--current"
-                  }`}
-                  onClick={() => handleTabChange("homework")}
-                >
-                  <div>service 7</div>
-                </a>
+                {services.map((service, index) => (
+                  <a
+                    key={index}
+                    className={`offer__link w-inline-block w-tab-link ${
+                      activeTab === service.category && "w--current"
+                    }`}
+                    onClick={() => handleTabChange(service.category)}
+                  >
+                    <div>{service.category}</div>
+                  </a>
+                ))}
               </>
             ) : (
-              tabContents[activeTab]
+              <div className="offer__wrap">
+                <div className="offer__text--more w-richtext">
+                  <ul className="check-list">
+                    {services
+                      .find((service) => service.category === activeTab)
+                      ?.subCategory.map((subCategory, index) => (
+                        <li key={index}>{subCategory}</li>
+                      ))}
+                  </ul>
+                </div>
+              </div>
             )}
           </div>
         </div>
