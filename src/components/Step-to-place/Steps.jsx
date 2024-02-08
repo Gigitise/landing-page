@@ -7,8 +7,8 @@ const Steps = () => {
         <header className="text-center mb-5">
           <h2 className="intro__heading">Placing your first gig?</h2>
         </header>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4 items-center justify-center ">
-          <div className="text-center ">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4 items-center justify-center">
+          <div>
             <div className="relative">
               <div className="flex items-center text-sm font-semibold leading-6 text-blue-400">
                 <svg
@@ -26,18 +26,21 @@ const Steps = () => {
                   />
                 </svg>
                 Step 1
-                <span className="absolute -ml-2 h-px w-screen -translate-x-full bg-blue-400 sm:-ml-3 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true"></span>
+                <span
+                  className="absolute -ml-2 h-px w-screen -translate-x-full bg-blue-400 sm:-ml-3 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                  aria-hidden="true"
+                ></span>
               </div>
             </div>
             <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
               Create your gig
             </p>
-            <p className="text-gray-500 text-sm mt-2 text-center">
+            <p className="mx-auto mt-2 max-w-md text-gray-500">
               Fill a form about your gig. Some of the details we need details
               like instructions, and deadline.
             </p>
           </div>
-          <div className="text-center">
+          <div>
             <div className="relative">
               <div className="flex items-center text-sm font-semibold leading-6 text-blue-400">
                 <svg
@@ -55,22 +58,27 @@ const Steps = () => {
                   />
                 </svg>
                 Step 2
-                <span className="absolute -ml-2 h-px w-screen -translate-x-full bg-blue-400 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true"></span>
+                <span
+                  className="absolute -ml-2 h-px w-screen -translate-x-full bg-blue-400 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                  aria-hidden="true"
+                ></span>
               </div>
-              <span className="absolute hidden -ml-2 h-px w-screen -translate-x-full bg-blue-400 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0" aria-hidden="true"></span>
+              <span
+                className="absolute hidden -ml-2 h-px w-screen -translate-x-full bg-blue-400 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                aria-hidden="true"
+              ></span>
             </div>
             <div className="mb-6">
-            <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
-              Assign freelancer
-            </p>
-            <p className="text-gray-500 text-sm mt-2 text-center">
-              View freelancer's profile, review and allocate them the gig you
-              created.
-            </p>
+              <p className="mt-6 text-lg font-semibold tracking-wide">
+                Assign freelancer
+              </p>
+              <p className="mx-auto mt-2 max-w-md text-gray-500">
+                View freelancer's profile, review and allocate them the gig you
+                created.
+              </p>
             </div>
-            
           </div>
-          <div className="text-center">
+          <div>
             <div className="relative">
               <div className="flex items-center text-sm font-semibold leading-6 text-blue-400">
                 <svg
@@ -93,7 +101,7 @@ const Steps = () => {
             <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
               Get task done
             </p>
-            <p className="text-gray-500 text-sm mt-2 text-center">
+            <p className="mx-auto mt-2 max-w-md text-gray-500">
               Freelancers complete the task on time and upload it. Download the
               solution and check out on satisfaction.
             </p>

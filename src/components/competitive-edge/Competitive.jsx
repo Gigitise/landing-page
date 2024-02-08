@@ -15,7 +15,9 @@ const Competitive = () => {
                 <div>
                   {<item.icon size={iconSize} className="text-blue-400" />}
                 </div>
-                <article>{item.description}</article>
+                <article className="mx-auto mt-1 max-w-md text-gray-500">
+                  {item.description}
+                </article>
               </div>
             </div>
           );
