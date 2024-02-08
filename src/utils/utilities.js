@@ -1,20 +1,23 @@
 export const reviews = [
   {
     name: "John Doe",
-    review: "Lorem ipsum",
+    review: "I used Gigitise for my last assignment and I was amazed by the quality of work. The expert I hired was knowledgeable and delivered the work on time. I couldn’t have asked for a better service!",
   },
   {
-    name: "John Doe",
-    review: "Lorem ipsum",
+    name: "Jane Smith",
+    review: "Gigitise is my go-to platform for academic help. Their experts are professional and reliable. Every project I’ve received has exceeded my expectations. I highly recommend their services!",
   },
   {
-    name: "John Doe",
-    review: "Lorem ipsum",
+    name: "Emily Johnson",
+    review: "I subscribed to Gigitise’s services a few months ago and it’s been a game-changer. Their resources are top-notch and have helped me improve my grades significantly. It’s worth every penny!",
   },
   {
-    name: "John Doe",
-    review: "Lorem ipsum",
+    name: "Michael Brown",
+    review: "I had a great experience with Gigitise. Their customer service was responsive and helpful. It’s refreshing to see such dedication to customer satisfaction.",
   },
+  {
+    name: "Sophia Davis",
+    review: "The quality of work I received from Gigitise was exceptional. The expert I worked with was clearly well-versed in the subject matter and delivered a well-researched and well-written project. I’m thoroughly impressed!"},
 ];
 
 export const services = [

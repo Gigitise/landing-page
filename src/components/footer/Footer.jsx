@@ -5,10 +5,10 @@ import { FaInstagram } from "react-icons/fa";
 
 import "./footer.css";
 
-const Footer = () => {
+const Footer = ({openModal}) => {
   return (
     <footer>
-      <div className="container">
+      <div className="container info">
         <div>
           <h3>About</h3>
           <p>
@@ -24,7 +24,7 @@ const Footer = () => {
           <h3>Information</h3>
           <ul>
             <li>
-              <a href="#">Terms & Conditions</a>
+              <a href="" onClick={(e) => {e.preventDefault(); openModal('terms');}}>Terms & Conditions</a>
             </li>
             <li>
               <a href="#">Login</a>
@@ -33,19 +33,13 @@ const Footer = () => {
               <a href="#">Sign Up</a>
             </li>
             <li>
-              <a href="#">Payment & Pricing Model</a>
-            </li>
-            <li>
               <a href="#">Help Center</a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="" onClick={(e) => {e.preventDefault(); openModal('privacy');}}>Privacy Policy</a>
             </li>
             <li>
               <a href="#">Contact Us</a>
-            </li>
-            <li>
-              <a href="#">Partnerships</a>
             </li>
           </ul>
         </div>
