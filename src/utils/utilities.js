@@ -112,3 +112,70 @@ export const services = [
     ],
   },
 ];
+
+export const favServices = [
+  {
+    id: 1,
+    title: "Essay Writing",
+    description:
+      "Get ahead in academia with our essay writing service. Our customers deliver top-notch custom essay tailored to your unique needs",
+    img: "https://img.freepik.com/free-vector/flat-illustration-secretary-s-day-celebration_23-2150190983.jpg?w=740&t=st=1707137979~exp=1707138579~hmac=e027156697d50c8977f9c2e3bbedfc90c2fb6a8045b2371b321eed458386311d",
+  },
+  {
+    id: 2,
+    title: "Homework & assignments",
+    description:
+      "Excel yoour academic journey with our comprehensive assignment assistance. Our academic experts provide tailored solutions accross diverse subjects",
+    img: "https://img.freepik.com/free-vector/blog-post-concept-illustration_114360-244.jpg?w=740&t=st=1707137289~exp=1707137889~hmac=d545fef803c86d9f27e94f755984d0833a4ddcdf1e994f82d9556a27b4ad0437",
+  },
+  {
+    id: 3,
+    title: "Programming & Technicals",
+    description:
+      "Your premier destination for top-tier coding solutions. Whether you need a web app or software solutions, achieve it with our programmers.",
+    img: "https://img.freepik.com/free-vector/programming-concept-illustration_114360-1670.jpg?w=740&t=st=1707137251~exp=1707137851~hmac=4e2f77ccf8496680f55b67fce0c937cfa9e1e80fdb56b555c25077adb4f4084e",
+  },
+];
+
+import { MdLibraryBooks } from "react-icons/md";
+import { LuCalendarClock } from "react-icons/lu";
+import { MdOutlineHelpOutline } from "react-icons/md";
+import { BsCashCoin } from "react-icons/bs";
+import { LuRotateCcw } from "react-icons/lu";
+export const competitive = [
+  {
+    id: 1,
+    title: "Original content",
+    icon: MdLibraryBooks,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, possimus facere laudantium itaque ea ipsum officiis nihil.",
+  },
+  {
+    id: 2,
+    title: "On time delivery",
+    icon: LuCalendarClock,
+    description:
+      "Lorem ipsum dolor sit amet consa, possimus facere laudantium itaque ea ipsum officiis nihil.",
+  },
+  {
+    id: 3,
+    title: "24/7 support",
+    icon: MdOutlineHelpOutline,
+    description:
+      "Lorem ipsum dolor sit amet consecsicing elit. Nulla, possimus facere laudantium itaque ea ipsum officiis nihil.",
+  },
+  {
+    id: 4,
+    title: "Payment security",
+    icon: BsCashCoin,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, possimus facere laudantium itaque ea ipsum ofciis nihil.",
+  },
+  {
+    id: 5,
+    title: "Free iterations & edits",
+    icon: LuRotateCcw,
+    description:
+      "Loresum dolor sit amet consectetur adipisicing elit. Nulla, possimus facere laudantium itaque ea ipsum officiis nihil.",
+  },
+];
