@@ -37,7 +37,7 @@ const Steps = () => {
               like instructions, and deadline.
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center ">
             <div className="relative">
               <div className="flex items-center justify-center text-sm font-semibold leading-6 text-blue-400">
                 <svg
@@ -70,33 +70,33 @@ const Steps = () => {
             
           </div>
           <div className="text-center">
-            <div className="relative ">
-              <div className="flex items-center justify-center  text-sm font-semibold leading-6 text-blue-400">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6 mr-2 "
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                  />
-                </svg>
-                Step 3
-              </div>
-            </div>
-            <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
-              Get task done
-            </p>
-            <p className="text-gray-500 text-sm mt-2 text-center">
-              Freelancers complete the task on time and upload it. Download the
-              solution and check out on satisfaction.
-            </p>
-          </div>
+  <div className="relative md:flex md:items-center md:justify-center">
+    <div className="flex items-center justify-center text-sm font-semibold leading-6 text-blue-400">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6 mr-2"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+        />
+      </svg>
+      Step 3
+    </div>
+  </div>
+  <p className="mt-6 text-lg font-semibold leading-8 tracking-wide">
+    Get task done
+  </p>
+  <p className="text-gray-500 text-sm mt-2 text-center">
+    Freelancers complete the task on time and upload it. Download the solution and check out on satisfaction.
+  </p>
+</div>
+
         </div>
       </div>
     </div>
