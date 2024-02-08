@@ -39,6 +39,12 @@ h1 {
   line-height: 1.3 !important;
 }
 
+.banner {
+  /* height: 100dvh; */
+  display: flex;
+  align-items: center;
+}
+
 .description {
   font-size: large;
 }

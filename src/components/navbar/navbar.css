@@ -13,7 +13,11 @@ nav {
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 .nav-left {
-  width: 40%;
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  gap: 2rem;
+  font-weight: bold;
 }
 .nav-right {
   width: 60%;
@@ -26,7 +30,7 @@ nav {
   width: 60%;
 }
 .search-bar input {
-  width: 90%;
+  width: 100%;
   border-radius: 20px;
   border: 1px solid var(--secondary-color);
   text-indent: 0.8rem;
@@ -37,9 +41,9 @@ nav {
   border: 1px solid var(--primary-color);
 }
 .nav-btns {
-  width: 40%;
   display: flex;
   justify-content: space-around;
+  gap: 2rem;
 }
 
 .nav-btns button {
