@@ -12,7 +12,9 @@ const Competitive = () => {
             <div key={key}>
               <h3>{item.title}</h3>
               <div>
-                <div>{<item.icon size={iconSize} />}</div>
+                <div>
+                  {<item.icon size={iconSize} className="text-blue-400" />}
+                </div>
                 <article>{item.description}</article>
               </div>
             </div>
