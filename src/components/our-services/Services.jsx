@@ -3,8 +3,8 @@ import { favServices } from "../../utils/utilities";
 
 const Services = () => {
   return (
-    <div className=" py-16 sm:py-11">
-      <div className="mx-auto px-6 lg:px-8 ">
+    <div className="py-16 sm:py-11">
+      <div className="mx-auto lg:px-8 ">
         <header className="text-center mb-5">
           <h2 className="intro__heading">Discover our top rated services</h2>
           <p className=" mx-auto mt-4 max-w-md text-gray-500">

@@ -5,12 +5,13 @@ footer {
   align-items: center;
   padding: 2rem;
 }
+
 footer h3 {
   font-size: 1rem;
   color: var(--secondary-color);
 }
 
-footer p{
+footer p {
   font-size: 1rem;
 }
 
@@ -20,7 +21,7 @@ footer p{
   padding: 0.8rem 0;
 }
 
-.info{
+.info {
   gap: 1rem;
 }
 
@@ -28,7 +29,7 @@ footer p{
   flex: 1;
 }
 
-.container > div:nth-child(2n+1) {
+.container > div:nth-child(2n + 1) {
   flex: 2;
 }
 

@@ -20,21 +20,21 @@ function App() {
   const BodyContent = () => {
     return (
       <>
-        <Navbar />
+        {/* <Navbar /> */}
         <Body />
         <Footer openModal={openModal} />
-        {modal === 'terms' && <Terms closeModal={closeModal} />}
-        {modal === 'privacy' && <Privacy closeModal={closeModal} />}
+        {modal === "terms" && <Terms closeModal={closeModal} />}
+        {modal === "privacy" && <Privacy closeModal={closeModal} />}
       </>
     );
-  }
+  };
 
   return (
     <>
       {modal && <div className="overlay"></div>}
       <BodyContent />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

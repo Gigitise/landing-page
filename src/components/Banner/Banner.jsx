@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <div className="banner bg-white relative w-full z-20 min-h-full flex flex-col items-stretch justify-stretch text-black">
       <div className="w-full z-20">
-        <div className="flex md:flex-row flex-col w-full mx-auto px-8 lg:px-10 max-w-[1600px] items-center pt-10  md:py-0">
+        <div className="flex md:flex-row flex-col w-full mx-auto lg:px-10 items-center pt-10  md:py-0">
           <div className="z-2 max-w-680 flex flex-col justify-between items-start pt-0   ">
             <h1 className="font-bold mb-3 text-5xl">
               Achieve more, stress less - Hire professional freelancers!

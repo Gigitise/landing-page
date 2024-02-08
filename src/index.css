@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 * {
+  box-sizing: border-box;
   --fontsize-normal: 0.95rem;
   --fontsize-small: 0.9rem;
   --primary-color: #0360d1;
@@ -40,7 +41,6 @@ h1 {
 }
 
 .banner {
-  /* height: 100dvh; */
   display: flex;
   align-items: center;
 }
@@ -73,7 +73,12 @@ h1 {
 }
 
 .competitive {
-  padding: 4rem;
+  padding-top: 4rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .competitive h2 {
@@ -81,8 +86,10 @@ h1 {
 }
 
 .competitive-items {
+  width: 80%;
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -95,4 +102,17 @@ h1 {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .competitive-items {
+    width: 100%;
+  }
+  footer {
+    padding: 0.5rem;
+  }
+
+  .quote {
+    padding: 0rem;
+  }
 }
