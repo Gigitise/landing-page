@@ -1,3 +1,9 @@
+export const stats = [
+  { id: 1, name: "Assignments completed", value: "800K+" },
+  { id: 2, name: "Students satisfied ", value: "566.2K+" },
+  { id: 3, name: "Skills Available", value: "80+" },
+];
+
 export const reviews = [
   {
     name: "John Doe",

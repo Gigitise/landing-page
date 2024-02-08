@@ -1,14 +1,9 @@
 import React from "react";
-
-const stats = [
-  { id: 1, name: "Assignments completed", value: "800K+" },
-  { id: 2, name: "Students satisfied ", value: "566.2K+" },
-  { id: 3, name: "Skills Available", value: "80+" },
-];
+import { stats } from "../../utils/utilities";
 
 const Banner = () => {
   return (
-    <div className="banner bg-white relative w-full z-20 min-h-full flex flex-col items-stretch justify-stretch text-black">
+    <div className="mb-15 lg:mt-40 mt-20 banner bg-white relative w-full z-20 min-h-full flex flex-col items-stretch justify-stretch text-black">
       <div className="w-full z-20">
         <div className="flex md:flex-row flex-col w-full mx-auto lg:px-10 items-center pt-10  md:py-0">
           <div className="z-2 max-w-680 flex flex-col justify-between items-start pt-0   ">
@@ -28,11 +23,11 @@ const Banner = () => {
               <p className="text-center">Get started</p>
             </a>
           </div>
-          <div className="self-end md:w-8/12  w-full pt-10 img-container img-contain md:py-0">
+          <div className="home-img self-end md:w-8/12  w-full pt-10 img-container img-contain md:py-0">
             <figure className="max-w-none w-full">
               <img
                 src="https://img.freepik.com/premium-vector/cartoon-character-poses-african-business-woman-desk-is-working-laptop-computer_61103-1089.jpg?w=740"
-                alt=""
+                alt="Gigitise-freelancing(Writing,Essays, classwork, homework)"
                 width="768"
                 height="639"
                 loading="lazy"

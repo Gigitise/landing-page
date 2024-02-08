@@ -20,7 +20,7 @@ function App() {
   const BodyContent = () => {
     return (
       <>
-        {/* <Navbar /> */}
+        <Navbar />
         <Body />
         <Footer openModal={openModal} />
         {modal === "terms" && <Terms closeModal={closeModal} />}
