@@ -36,7 +36,6 @@ export const services = [
   },
   {
     category: "Class Work",
-    unit: 1.29,
     subCategory: [
       "Mathematics",
       "Biology",
@@ -49,5 +48,49 @@ export const services = [
       "Statistics",
       "Other",
     ],
+  },
+  {
+    category: "Programming",
+    subCategory: [
+      "Python",
+      "Javascript",
+      "Typescript",
+      "C",
+      "C++",
+      "C#",
+      "Java",
+      "Swift",
+      "Bash",
+      "GO",
+      "Matlab",
+      "Rust",
+      "Other",
+    ],
+  },
+  {
+    category: "Website Development",
+    subCategory: [
+      "Landing Page",
+      "Business Website",
+      "Portfolio",
+      "Blog Website",
+      "Event Website",
+      "Personal Website",
+      "E-Commerce",
+      "Start-up Website",
+      "Other",
+    ],
+  },
+  {
+    category: "Mobile Development",
+    subCategory: ["Android", "IoS", "Other"],
+  },
+  {
+    category: "Backend Development",
+    subCategory: ["Python", "JS/NodeJS", "Java", "Go", "Other"],
+  },
+  {
+    category: " Design",
+    subCategory: ["Figma", "Canva", "Personal Logo", "Business Logo", "Other","Solid works", "Adobe", "CATIA", "AutoCAD", "Other"],
   },
 ];
