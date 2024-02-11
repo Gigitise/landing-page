@@ -23,8 +23,12 @@ const Navbar = () => {
           <input type="text" placeholder="Search for Essays" />
         </div>
         <div className={`nav-btns ${searchVisible? '' : 'visible'}`}>
+        <a href="https://clients.gigitse.com/login" target="_blank" rel="noopener noreferrer">
           <button>Sign Up</button>
+        </a>
+        <a href="https://clients.gigitse.com/login" target="_blank" rel="noopener noreferrer">
           <button>Login</button>
+        </a>
         </div>
       </div>
     </nav>

@@ -48,7 +48,9 @@ const Footer = ({openModal}) => {
           <h3>Subscription</h3>
           <div className="subscription">
             <input type="email" placeholder="Your email" />
-            <button type="submit">Subscribe</button>
+            <a href="https://clients.gigitse.com/register" target="_blank" rel="noopener noreferrer">
+              <button type="submit">Subscribe</button>
+            </a>
           </div>
         </div>
       </div>
