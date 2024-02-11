@@ -71,6 +71,9 @@ nav {
     position: relative;
     width: fit-content;
   }
+  .nav-right {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,12 +100,28 @@ nav {
     display: none;
   }
 }
-
 @media only screen and (max-width: 480px) {
-  .search-bar {
+  .mobile-invisible{
     display: none;
   }
-  .search-bar.visible {
+}
+
+
+@media only screen and (max-width: 480px) {
+  .nav-left, .nav-btns {
+    display: none;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  .search-bar input {
+    width: 280px;  
+    padding: 0.5rem 0.5rem;
+  }
+  .visible{
     display: block;
+  }
+  .invisible{
+    display: none;
   }
 }
