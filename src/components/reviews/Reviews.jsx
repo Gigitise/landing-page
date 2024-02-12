@@ -32,7 +32,9 @@ const Reviews = () => {
           </div>
         ))}
       </div>
-      <button className=" mt-12 btn--blue_220 w-button">Create gig</button>
+      <a href="https://clients.gigitse.com/login" target="_blank" rel="noopener noreferrer">
+        <button className=" mt-12 btn--blue_220 w-button">Create gig</button>
+      </a>
     </div>
   );
 };
