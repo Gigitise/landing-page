@@ -8,7 +8,7 @@ import Banner from "../../components/Banner/Banner";
 import Comprehensive from "../../components/comprehensive/Comprehensive";
 import { useNavigate } from "react-router-dom";
 import Competitive from "../../components/competitive-edge/Competitive";
-
+import Solved from "../../components/solved/Solved";
 const Body = () => {
   return (
     <div className="body">
@@ -16,6 +16,7 @@ const Body = () => {
         <Banner />
         <Services />
         <Comprehensive />
+        <Solved />
         <Competitive />
         <Process />
         <Reviews />

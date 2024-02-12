@@ -16,6 +16,7 @@ const Services = () => {
           {favServices?.map((service, key) => {
             return (
               <div key={key} className="bg-white rounded-lg shadow-lg p-8">
+                {service.onOffer && <div className="on-offer">OFFER</div>}
                 <div className="relative overflow-hidden">
                   <img
                     className="object-cover w-full  h-[350px]"

@@ -72,6 +72,79 @@ h1 {
   width: 100%;
 }
 
+.completed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completed section {
+  position: relative;
+  margin: 4rem 0;
+  min-height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(235, 235, 235);
+  /* color: #f7fafc; */
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.completed section button {
+  margin: 2rem 0;
+}
+
+.completed .desc {
+  position: relative;
+  width: 40%;
+  text-align: center;
+}
+
+.badge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.badge-icon {
+  color: var(--secondary-color);
+}
+
+.badge article {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+  font-weight: bold;
+  color: orange;
+  width: fit-content;
+}
+
+.completed d {
+  font-size: large;
+}
+
+.new {
+  position: absolute;
+  color: var(--secondary-color);
+  top: -2%;
+  right: -2%;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
 .competitive {
   padding-top: 4rem;
   position: relative;
@@ -104,12 +177,22 @@ h1 {
   gap: 1rem;
 }
 
+.on-offer {
+  font-size: x-small;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  z-index: 99;
+  background-color: red;
+  color: #fff;
+  padding: 2px;
+  /* right: 0; */
+}
+
 @media screen and (max-width: 768px) {
-  /* .home-img {
-    position: absolute;
-    z-index: -1;
-    transform: translateY(50%);
-  } */
+  .completed .desc {
+    width: 80%;
+  }
 
   .competitive-items {
     width: 100%;

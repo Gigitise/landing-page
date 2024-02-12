@@ -122,6 +122,7 @@ export const services = [
 export const favServices = [
   {
     id: 1,
+    onOffer: true,
     title: "Essay Writing",
     description:
       "Get ahead in academia with our essay writing service. Our customers deliver top-notch custom essay tailored to your unique needs",
@@ -129,6 +130,7 @@ export const favServices = [
   },
   {
     id: 2,
+    onOffer: false,
     title: "Homework & assignments",
     description:
       "Excel yoour academic journey with our comprehensive assignment assistance. Our academic experts provide tailored solutions accross diverse subjects",
@@ -136,6 +138,7 @@ export const favServices = [
   },
   {
     id: 3,
+    onOffer: false,
     title: "Programming & Technicals",
     description:
       "Your premier destination for top-tier coding solutions. Whether you need a web app or software solutions, achieve it with our programmers.",
