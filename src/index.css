@@ -189,6 +189,10 @@ h1 {
   /* right: 0; */
 }
 
+.view-more:hover {
+  border: solid 1px var(--secondary-color);
+}
+
 @media screen and (max-width: 768px) {
   .completed .desc {
     width: 80%;
