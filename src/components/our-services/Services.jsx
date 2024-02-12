@@ -37,7 +37,10 @@ const Services = () => {
                   {service.description}
                 </p>
                 <div className="flex items-center justify-center mt-4">
-                  <a href="" className="text-sky-600 py-2 px-4  ">
+                  <a
+                    href=""
+                    className="text-sky-600 py-2 px-4 border view-more"
+                  >
                     View more
                   </a>
                 </div>
