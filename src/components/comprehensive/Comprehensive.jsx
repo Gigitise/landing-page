@@ -116,7 +116,7 @@ const Comprehensive = () => {
         </div>
       </div>
       <div className="btn-container">
-        <a href="" className="btn--blue_220 w-button">
+        <a href="https://freelancers.gigitise.com" className="btn--blue_220 w-button">
           Find freelancers
         </a>
       </div>
