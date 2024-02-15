@@ -124,6 +124,9 @@ nav {
   .nav-btns {
     display: none;
   }
+  .search-icon{
+    display: flex;
+  }
 
   .search-bar {
     width: 90%;
