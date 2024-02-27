@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <div className={`nav-btns ${searchVisible ? "" : "visible"}`}>
           <a
-            href="https://clients.gigitse.com/login"
+            href="https://clients.gigitse.com/register"
             target="_blank"
             rel="noopener noreferrer"
           >
