@@ -23,7 +23,11 @@ const Solved = () => {
             <SlBadge className="badge-icon" size={200} />
           </div>
         </div>
-        <button className="btn--blue_220 w-button">Check Library</button>
+        <button className="btn--blue_220 w-button">
+          <a href="https://clients.gigitse.com/login">
+            Check Library
+          </a>
+        </button>
       </section>
     </div>
   );

@@ -27,10 +27,10 @@ const Footer = ({openModal}) => {
               <a href="" onClick={(e) => {e.preventDefault(); openModal('terms');}}>Terms & Conditions</a>
             </li>
             <li>
-              <a href="#">Login</a>
+              <a href="https://clients.gigitse.com/login">Login</a>
             </li>
             <li>
-              <a href="#">Sign Up</a>
+              <a href="https://clients.gigitse.com/register">Sign Up</a>
             </li>
             <li>
               <a href="#">Help Center</a>
