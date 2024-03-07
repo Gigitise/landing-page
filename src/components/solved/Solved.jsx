@@ -24,7 +24,7 @@ const Solved = () => {
           </div>
         </div>
         <button className="btn--blue_220 w-button">
-          <a href="https://clients.gigitse.com/login">
+          <a href="https://clients.gigitise.com/login">
             Check Library
           </a>
         </button>

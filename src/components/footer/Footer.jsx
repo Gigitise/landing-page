@@ -27,10 +27,10 @@ const Footer = ({openModal}) => {
               <a href="" onClick={(e) => {e.preventDefault(); openModal('terms');}}>Terms & Conditions</a>
             </li>
             <li>
-              <a href="https://clients.gigitse.com/login">Login</a>
+              <a href="https://clients.gigitise.com/login">Login</a>
             </li>
             <li>
-              <a href="https://clients.gigitse.com/register">Sign Up</a>
+              <a href="https://clients.gigitise.com/register">Sign Up</a>
             </li>
             <li>
               <a href="#">Help Center</a>
@@ -48,7 +48,7 @@ const Footer = ({openModal}) => {
           <h3>Subscription</h3>
           <div className="subscription">
             <input type="email" placeholder="Your email" />
-            <a href="https://clients.gigitse.com/register" target="_blank" rel="noopener noreferrer">
+            <a href="https://clients.gigitise.com/register" target="_blank" rel="noopener noreferrer">
               <button type="submit">Subscribe</button>
             </a>
           </div>
