@@ -171,10 +171,22 @@ h1 {
   font-weight: bold;
 }
 
+.competitive-items .item {
+  position: relative;
+}
+
 .competitive-items div div {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.new-competitive {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  color: red;
 }
 
 .on-offer {

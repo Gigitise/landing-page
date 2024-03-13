@@ -25,6 +25,18 @@ footer p {
   gap: 1rem;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  color: gray;
+  text-decoration: none !important;
+}
+
+.contacts span {
+  cursor: pointer;
+}
+
 .container > div {
   flex: 1;
 }

@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 import "./footer.css";
 
-const Footer = ({openModal}) => {
+const Footer = ({ openModal }) => {
   return (
     <footer>
       <div className="container info">
@@ -24,7 +24,15 @@ const Footer = ({openModal}) => {
           <h3>Information</h3>
           <ul>
             <li>
-              <a href="" onClick={(e) => {e.preventDefault(); openModal('terms');}}>Terms & Conditions</a>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  openModal("terms");
+                }}
+              >
+                Terms & Conditions
+              </a>
             </li>
             <li>
               <a href="https://clients.gigitse.com/login">Login</a>
@@ -36,11 +44,21 @@ const Footer = ({openModal}) => {
               <a href="#">Help Center</a>
             </li>
             <li>
-              <a href="" onClick={(e) => {e.preventDefault(); openModal('privacy');}}>Privacy Policy</a>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  openModal("privacy");
+                }}
+              >
+                Privacy Policy
+              </a>
             </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
+            <li>Contact Us</li>
+            <div className="contacts">
+              <span>info@gigitise.com</span>
+              <span>support@gigitise.com</span>
+            </div>
           </ul>
         </div>
 
@@ -48,7 +66,11 @@ const Footer = ({openModal}) => {
           <h3>Subscription</h3>
           <div className="subscription">
             <input type="email" placeholder="Your email" />
-            <a href="https://clients.gigitse.com/register" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://clients.gigitse.com/register"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button type="submit">Subscribe</button>
             </a>
           </div>
