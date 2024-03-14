@@ -9,7 +9,7 @@ const Competitive = () => {
       <div className="competitive-items">
         {competitive?.map((item, key) => {
           return (
-            <div key={key}>
+            <div className="item" key={key}>
               <h3>{item.title}</h3>
               <div>
                 <div>
@@ -19,6 +19,7 @@ const Competitive = () => {
                   {item.description}
                 </article>
               </div>
+              {key === 4 && <div className="new-competitive">New</div>}
             </div>
           );
         })}

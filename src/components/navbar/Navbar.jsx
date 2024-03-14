@@ -2,7 +2,7 @@ import gigitise from "../../../public/gigitise.svg";
 import "./navbar.css";
 import { CiSearch } from "react-icons/ci";
 import { MdKeyboardArrowLeft } from "react-icons/md";
-
+import { createEvent } from "../../utils/ga4";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -37,6 +37,7 @@ const Navbar = () => {
             href="https://clients.gigitise.com/register"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => createEvent("Gigitise Sign up", "Click", "Sign up")}
           >
             <button>Sign Up</button>
           </a>
@@ -44,6 +45,7 @@ const Navbar = () => {
             href="https://clients.gigitise.com/login"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => createEvent("Gigitise open", "Click", "Sign up")}
           >
             <button>Login</button>
           </a>

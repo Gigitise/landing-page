@@ -1,5 +1,6 @@
 import React from "react";
 import { stats } from "../../utils/utilities";
+import { createEvent } from "../../utils/ga4";
 
 const Banner = () => {
   return (
@@ -18,7 +19,11 @@ const Banner = () => {
             </div>
             <a
               className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-blue-400  hover:-translate-y-px "
-              href=""
+              target="_blank"
+              href="https://clients.gigitse.com"
+              onClick={() =>
+                createEvent("Gigitise Open", "Click", "Get started")
+              }
             >
               <p className="text-center">Get started</p>
             </a>

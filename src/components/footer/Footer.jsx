@@ -2,12 +2,41 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-
+import { ToastContainer, toast } from "react-toastify";
 import "./footer.css";
+import "react-toastify/dist/ReactToastify.css";
 
-const Footer = ({openModal}) => {
+const Footer = ({ openModal }) => {
+  const subURL = `${import.meta.env.VITE_API_URL}/subscribe-letter/`;
+  const performSubscribe = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    try {
+      const subscribe = await fetch(subURL, {
+        method: "post",
+        headers: {
+          "content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+        }),
+      });
+
+      if (subscribe.ok) {
+        toast.success(
+          "Subscription success, you will be receiving our news letters!"
+        );
+      } else {
+        toast.error("Failed to register the email, try again");
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error("We were unable to add the email at the moment");
+    }
+  };
   return (
     <footer>
+      <ToastContainer />
       <div className="container info">
         <div>
           <h3>About</h3>
@@ -24,7 +53,15 @@ const Footer = ({openModal}) => {
           <h3>Information</h3>
           <ul>
             <li>
-              <a href="" onClick={(e) => {e.preventDefault(); openModal('terms');}}>Terms & Conditions</a>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  openModal("terms");
+                }}
+              >
+                Terms & Conditions
+              </a>
             </li>
             <li>
               <a href="https://clients.gigitise.com/login">Login</a>
@@ -36,22 +73,30 @@ const Footer = ({openModal}) => {
               <a href="#">Help Center</a>
             </li>
             <li>
-              <a href="" onClick={(e) => {e.preventDefault(); openModal('privacy');}}>Privacy Policy</a>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  openModal("privacy");
+                }}
+              >
+                Privacy Policy
+              </a>
             </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
+            <li>Contact Us</li>
+            <div className="contacts">
+              <span>info@gigitise.com</span>
+              <span>support@gigitise.com</span>
+            </div>
           </ul>
         </div>
 
         <div>
           <h3>Subscription</h3>
-          <div className="subscription">
-            <input type="email" placeholder="Your email" />
-            <a href="https://clients.gigitise.com/register" target="_blank" rel="noopener noreferrer">
-              <button type="submit">Subscribe</button>
-            </a>
-          </div>
+          <form className="subscription" onSubmit={performSubscribe}>
+            <input id="email" type="email" required placeholder="Your email" />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
       <div className="container">
@@ -62,23 +107,32 @@ const Footer = ({openModal}) => {
         <div>
           <ul className="social-icons">
             <li>
-              <a className="facebook" href="#">
+              <a
+                onClick={() => createEvent("Social media", "Click", "Facebook")}
+                className="facebook"
+                href="#"
+              >
                 <FaFacebookF />
               </a>
             </li>
             <li>
-              <a className="twitter" href="#">
+              <a
+                onClick={() => createEvent("Social media", "Click", "Twitter")}
+                className="twitter"
+                href="#"
+              >
                 <FaXTwitter />
               </a>
             </li>
             <li>
-              <a className="instagram" href="#">
+              <a
+                onClick={() =>
+                  createEvent("Social media", "Click", "Instagram")
+                }
+                className="instagram"
+                href="#"
+              >
                 <FaInstagram />
-              </a>
-            </li>
-            <li>
-              <a className="linkedin" href="#">
-                <FaLinkedinIn />
               </a>
             </li>
           </ul>

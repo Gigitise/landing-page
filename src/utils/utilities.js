@@ -6,29 +6,58 @@ export const stats = [
 
 export const reviews = [
   {
-    name: "John Doe",
+    name: "Lauren Miller",
+    topic: "Research Paper",
     review:
-      "I used Gigitise for my last assignment and I was amazed by the quality of work. The expert I hired was knowledgeable and delivered the work on time. I couldn’t have asked for a better service!",
+      "The experts are super friendly and respond within few minutes. Also, the content delivered was on flick.",
   },
   {
-    name: "Jane Smith",
+    name: "Brian Robinson",
+    topic: "Biology",
     review:
-      "Gigitise is my go-to platform for academic help. Their experts are professional and reliable. Every project I’ve received has exceeded my expectations. I highly recommend their services!",
+      "My assignments was delivered on time days before the deadline and the content was amazing.",
   },
   {
-    name: "Emily Johnson",
+    name: "Ashley Jones",
+    topic: "Website",
     review:
-      "I subscribed to Gigitise’s services a few months ago and it’s been a game-changer. Their resources are top-notch and have helped me improve my grades significantly. It’s worth every penny!",
+      "I was looking for someone to handle my side project, the freelancer I worked with on Gigitise was a top notch!",
   },
   {
     name: "Michael Brown",
+    topic: "Case Study",
     review:
-      "I had a great experience with Gigitise. Their customer service was responsive and helpful. It’s refreshing to see such dedication to customer satisfaction.",
+      "This freelancer is easy to work with, follows instructions, and got my paper back to me before the deadline.",
   },
   {
-    name: "Sophia Davis",
+    name: "Michelle Hernandez",
+    topic: "Article Review",
     review:
-      "The quality of work I received from Gigitise was exceptional. The expert I worked with was clearly well-versed in the subject matter and delivered a well-researched and well-written project. I’m thoroughly impressed!",
+      "I'd highly recommend this freelancer to anyone who needs an essay writing help with A+ result.",
+  },
+  {
+    name: "Emily Rodriguez",
+    topic: "Computer Design",
+    review:
+      "Your services stands out among the rest. Gigitise freelancers are dependable and skilled.",
+  },
+  {
+    name: "Jonathan Lee",
+    topic: "Presentation",
+    review:
+      "Ask and it shall be given, the writer delivered amazing work within 24 hours. I'd defininitely rate him 5 stars.",
+  },
+  {
+    name: "Timothy Anderson",
+    topic: "Computer Science",
+    review:
+      "Well knowledgable with so many topics. I have worked with the freelancer with over 5+ topics and the quality delivered was just lit.",
+  },
+  {
+    name: "Kevin Garcia",
+    topic: "Annotated Bibliography",
+    review:
+      "Excellent and friendly writer, he worked on my project and definitely nailed it.",
   },
 ];
 
@@ -151,40 +180,74 @@ import { LuCalendarClock } from "react-icons/lu";
 import { MdOutlineHelpOutline } from "react-icons/md";
 import { BsCashCoin } from "react-icons/bs";
 import { LuRotateCcw } from "react-icons/lu";
+
 export const competitive = [
   {
     id: 1,
     title: "Original content",
     icon: MdLibraryBooks,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, possimus facere laudantium itaque ea ipsum officiis nihil.",
+      "We aree committed to delivering original, creative content tailored to your specific requirements.",
   },
   {
     id: 2,
     title: "On time delivery",
     icon: LuCalendarClock,
     description:
-      "Lorem ipsum dolor sit amet consa, possimus facere laudantium itaque ea ipsum officiis nihil.",
+      "Our freelancers understand the importance of meeting deadlines and work diligently to deliver projects promptly and efficiently",
   },
   {
     id: 3,
     title: "24/7 support",
     icon: MdOutlineHelpOutline,
     description:
-      "Lorem ipsum dolor sit amet consecsicing elit. Nulla, possimus facere laudantium itaque ea ipsum officiis nihil.",
+      "Whether you have a question, need assistance, or want to discuss details, our dedicated support team is available 24/7 to assist you",
   },
   {
     id: 4,
     title: "Payment security",
     icon: BsCashCoin,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, possimus facere laudantium itaque ea ipsum ofciis nihil.",
+      "We utilize industry-standard encryption and security protocols to safeguard your payment information and ensure a secure transaction process",
   },
   {
     id: 5,
     title: "Free iterations & edits",
     icon: LuRotateCcw,
     description:
-      "Loresum dolor sit amet consectetur adipisicing elit. Nulla, possimus facere laudantium itaque ea ipsum officiis nihil.",
+      "With unlimited revisions, you can collaborate closely with our professionals to refine your content until it exceeds your expectations",
+  },
+];
+
+export const faqs = [
+  {
+    question: "What subjects or topics do Gigitise freelancers cover?",
+    answer:
+      "Gigitise freelancers cover a wide range of subjects and topics including writing, programming, website development, design, and more",
+  },
+  {
+    question: "Is my payment information secure with Gigitise?",
+    answer:
+      "Yes, Gigitise utilizes industry-standard encryption and security protocols to safeguard payment information and ensure a secure transaction process",
+  },
+  {
+    question: "Can I request revisions or edits to the content?",
+    answer:
+      "Gigitise offers unlimited revisions, allowing clients to collaborate closely with freelancers to refine content until it exceeds their expectations",
+  },
+  {
+    question: "How do I place my first gig on Gigitise?",
+    answer:
+      "Placing a gig on Gigitise involves creating a gig by filling out a form with details such as instructions and deadlines, assigning a freelancer, and then receiving the completed task on time for review",
+  },
+  {
+    question: "How can I find freelancers on Gigitise?",
+    answer:
+      "To find freelancers on Gigitise, you can browse through their profiles, review their skills and experiences, and then assign them your gig",
+  },
+  {
+    question: "What services does Gigitise offer?",
+    answer:
+      "Gigitise offers a range of services including essay writing, homework and assignments assistance, programming and technical solutions, and more.",
   },
 ];

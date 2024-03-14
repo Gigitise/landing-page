@@ -1,6 +1,7 @@
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useState } from "react";
 import "./faq.css";
+import { faqs } from "../../utils/utilities";
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -12,27 +13,6 @@ const Faq = () => {
       setOpenIndex(index);
     }
   };
-
-  const faqs = [
-    {
-      question:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod accusamus, mollitia voluptatibus ullam commodi? Necessitatibus magnam corporis iste officiis.",
-    },
-    {
-      question:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod accusamus, mollitia voluptatibus ullam commodi? Necessitatibus magnam corporis iste officiis.",
-    },
-    {
-      question:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod accusamus, mollitia voluptatibus ullam commodi? Necessitatibus magnam corporis iste officiis.",
-    },
-  ];
 
   return (
     <div className="faq-main-container">
@@ -46,7 +26,7 @@ const Faq = () => {
             </button>
             {openIndex === index && (
               <div className="panel">
-                <p>{faq.answer}</p>
+                <>{faq.answer}</>
               </div>
             )}
           </div>
