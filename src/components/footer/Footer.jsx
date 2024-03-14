@@ -64,10 +64,10 @@ const Footer = ({ openModal }) => {
               </a>
             </li>
             <li>
-              <a href="https://clients.gigitse.com/login">Login</a>
+              <a href="https://clients.gigitise.com/login">Login</a>
             </li>
             <li>
-              <a href="https://clients.gigitse.com/register">Sign Up</a>
+              <a href="https://clients.gigitise.com/register">Sign Up</a>
             </li>
             <li>
               <a href="#">Help Center</a>

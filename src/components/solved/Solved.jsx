@@ -32,6 +32,7 @@ const Solved = () => {
             target="_blank"
             href="https://clients.gigitse.com/solved"
           >
+
             Check Library
           </a>
         </button>

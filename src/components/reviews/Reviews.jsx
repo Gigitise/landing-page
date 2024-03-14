@@ -40,6 +40,7 @@ const Reviews = () => {
         rel="noopener noreferrer"
         onClick={() => createEvent("Gigitise Open", "Click", "Create Gig")}
       >
+
         <button className=" mt-12 btn--blue_220 w-button">Create gig</button>
       </a>
     </div>

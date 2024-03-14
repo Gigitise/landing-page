@@ -36,6 +36,7 @@ const Services = () => {
                       >
                         View service
                       </a>
+
                     </button>
                   </div>
                 </div>
@@ -49,6 +50,7 @@ const Services = () => {
                   <a
                     target="_blank"
                     href="https://clients.gigitse.com"
+
                     className="text-sky-600 py-2 px-4 border view-more"
                     onClick={() =>
                       createEvent(

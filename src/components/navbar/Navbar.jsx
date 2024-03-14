@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <div className={`nav-btns ${searchVisible ? "" : "visible"}`}>
           <a
-            href="https://clients.gigitse.com/register"
+            href="https://clients.gigitise.com/register"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => createEvent("Gigitise Sign up", "Click", "Sign up")}
@@ -42,7 +42,7 @@ const Navbar = () => {
             <button>Sign Up</button>
           </a>
           <a
-            href="https://clients.gigitse.com/login"
+            href="https://clients.gigitise.com/login"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => createEvent("Gigitise open", "Click", "Sign up")}
