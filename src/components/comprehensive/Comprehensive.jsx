@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Comprehensive.css";
 import { services } from "../../utils/utilities";
+import { createEvent } from "../../utils/ga4";
 
 const Comprehensive = () => {
   const [activeTab, setActiveTab] = useState("Writing");
@@ -28,9 +29,6 @@ const Comprehensive = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
-
-
-
 
   return (
     <div>
@@ -93,7 +91,14 @@ const Comprehensive = () => {
                     className={`offer__link w-inline-block w-tab-link ${
                       activeTab === service.category && "w--current"
                     }`}
-                    onClick={() => handleTabChange(service.category)}
+                    onClick={() => {
+                      handleTabChange(service.category);
+                      createEvent(
+                        "Gigitise Open",
+                        "Click",
+                        "View Service - Comprehensive"
+                      );
+                    }}
                   >
                     <div>{service.category}</div>
                   </a>
@@ -116,7 +121,14 @@ const Comprehensive = () => {
         </div>
       </div>
       <div className="btn-container">
-        <a href="https://clients.gigitse.com/login" className="btn--blue_220 w-button">
+        <a
+          target="_blank"
+          href="https://clients.gigitse.com"
+          className="btn--blue_220 w-button"
+          onClick={() =>
+            createEvent("Gigitise Open", "Click", "Find Freelancers")
+          }
+        >
           Find freelancers
         </a>
       </div>

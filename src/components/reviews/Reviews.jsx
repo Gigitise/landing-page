@@ -2,6 +2,7 @@ import { FaStar } from "react-icons/fa";
 import "./reviews.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { reviews } from "../../utils/utilities";
+import { createEvent } from "../../utils/ga4";
 
 const Reviews = () => {
   return (
@@ -37,6 +38,7 @@ const Reviews = () => {
         href="https://clients.gigitse.com/create-task"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => createEvent("Gigitise Open", "Click", "Create Gig")}
       >
         <button className=" mt-12 btn--blue_220 w-button">Create gig</button>
       </a>

@@ -27,11 +27,11 @@ const Footer = ({ openModal }) => {
           "Subscription success, you will be receiving our news letters!"
         );
       } else {
-        toast.error("Failed to register, try again");
+        toast.error("Failed to register the email, try again");
       }
     } catch (error) {
       console.log(error);
-      toast.error("Failed to send request");
+      toast.error("We were unable to add the email at the moment");
     }
   };
   return (
@@ -95,13 +95,7 @@ const Footer = ({ openModal }) => {
           <h3>Subscription</h3>
           <form className="subscription" onSubmit={performSubscribe}>
             <input id="email" type="email" required placeholder="Your email" />
-            <a
-              href="https://clients.gigitse.com/register"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button type="submit">Subscribe</button>
-            </a>
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
@@ -113,23 +107,32 @@ const Footer = ({ openModal }) => {
         <div>
           <ul className="social-icons">
             <li>
-              <a className="facebook" href="#">
+              <a
+                onClick={() => createEvent("Social media", "Click", "Facebook")}
+                className="facebook"
+                href="#"
+              >
                 <FaFacebookF />
               </a>
             </li>
             <li>
-              <a className="twitter" href="#">
+              <a
+                onClick={() => createEvent("Social media", "Click", "Twitter")}
+                className="twitter"
+                href="#"
+              >
                 <FaXTwitter />
               </a>
             </li>
             <li>
-              <a className="instagram" href="#">
+              <a
+                onClick={() =>
+                  createEvent("Social media", "Click", "Instagram")
+                }
+                className="instagram"
+                href="#"
+              >
                 <FaInstagram />
-              </a>
-            </li>
-            <li>
-              <a className="linkedin" href="#">
-                <FaLinkedinIn />
               </a>
             </li>
           </ul>

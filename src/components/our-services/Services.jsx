@@ -1,5 +1,6 @@
 import React from "react";
 import { favServices } from "../../utils/utilities";
+import { createEvent } from "../../utils/ga4";
 
 const Services = () => {
   return (
@@ -26,7 +27,15 @@ const Services = () => {
                   <div className="absolute inset-0 bg-black opacity-40"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <button className="bg-white text-gray-900 py-2 px-6 rounded-full font-bold hover:bg-gray-300">
-                      <a href="https://clients.gigitse.com/login">View service</a>
+                      <a
+                        onClick={() =>
+                          createEvent("Gigitise Open", "Click", "View Service")
+                        }
+                        target="_blank"
+                        href="https://clients.gigitse.com"
+                      >
+                        View service
+                      </a>
                     </button>
                   </div>
                 </div>
@@ -38,8 +47,16 @@ const Services = () => {
                 </p>
                 <div className="flex items-center justify-center mt-4">
                   <a
-                    href="https://clients.gigitse.com/login"
+                    target="_blank"
+                    href="https://clients.gigitse.com"
                     className="text-sky-600 py-2 px-4 border view-more"
+                    onClick={() =>
+                      createEvent(
+                        "Gigitise Open",
+                        "Click",
+                        "View Service - More"
+                      )
+                    }
                   >
                     View more
                   </a>

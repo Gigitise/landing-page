@@ -129,6 +129,10 @@ h1 {
   width: fit-content;
 }
 
+.completed section {
+  width: 80%;
+}
+
 .completed d {
   font-size: large;
 }
@@ -206,6 +210,10 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  .completed section {
+    width: 90%;
+  }
+  .completed section h1,
   .completed .desc {
     width: 80%;
   }

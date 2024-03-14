@@ -1,4 +1,5 @@
 import { SlBadge } from "react-icons/sl";
+import { createEvent } from "../../utils/ga4";
 
 const Solved = () => {
   return (
@@ -24,7 +25,13 @@ const Solved = () => {
           </div>
         </div>
         <button className="btn--blue_220 w-button">
-          <a href="https://clients.gigitse.com/login">
+          <a
+            onClick={() =>
+              createEvent("Gigitise Open", "Click", "Check library")
+            }
+            target="_blank"
+            href="https://clients.gigitse.com/solved"
+          >
             Check Library
           </a>
         </button>
