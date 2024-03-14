@@ -2,12 +2,41 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-
+import { ToastContainer, toast } from "react-toastify";
 import "./footer.css";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = ({ openModal }) => {
+  const subURL = `${import.meta.env.VITE_API_URL}/subscribe-letter/`;
+  const performSubscribe = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    try {
+      const subscribe = await fetch(subURL, {
+        method: "post",
+        headers: {
+          "content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+        }),
+      });
+
+      if (subscribe.ok) {
+        toast.success(
+          "Subscription success, you will be receiving our news letters!"
+        );
+      } else {
+        toast.error("Failed to register, try again");
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error("Failed to send request");
+    }
+  };
   return (
     <footer>
+      <ToastContainer />
       <div className="container info">
         <div>
           <h3>About</h3>
@@ -64,8 +93,8 @@ const Footer = ({ openModal }) => {
 
         <div>
           <h3>Subscription</h3>
-          <div className="subscription">
-            <input type="email" placeholder="Your email" />
+          <form className="subscription" onSubmit={performSubscribe}>
+            <input id="email" type="email" required placeholder="Your email" />
             <a
               href="https://clients.gigitse.com/register"
               target="_blank"
@@ -73,7 +102,7 @@ const Footer = ({ openModal }) => {
             >
               <button type="submit">Subscribe</button>
             </a>
-          </div>
+          </form>
         </div>
       </div>
       <div className="container">
