@@ -6,7 +6,7 @@ import { createEvent } from "../../utils/ga4";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [searchVisible, setSearchVisible] = useState(true);
+  const [searchVisible, setSearchVisible] = useState(false);
 
   return (
     <nav>
