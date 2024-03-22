@@ -26,7 +26,7 @@ const Terms = ({ closeModal }) => {
         Please read these terms and conditions carefully before using Our
         Service.
       </p>
-      <ReactMarkdown>{terms}</ReactMarkdown>
+      <ReactMarkdown>Hi **Terms**</ReactMarkdown>
     </div>
   );
 };
