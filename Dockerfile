@@ -9,6 +9,6 @@ RUN npm run build
 
 FROM nginx:alpine
 
-COPY --from=builder /landing_page/dist /usr/share/nginx/html/landing
+COPY --from=builder /landing_page/dist /var/www/landing
 
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
