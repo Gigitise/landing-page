@@ -11,4 +11,4 @@ FROM nginx:alpine
 
 COPY --from=builder /landing_page/dist /var/www/landing
 
-COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY ././nginx/default.conf /etc/nginx/conf.d/default.conf
