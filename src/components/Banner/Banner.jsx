@@ -20,7 +20,7 @@ const Banner = () => {
             <a
               className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-blue-400  hover:-translate-y-px "
               target="_blank"
-              href="https://clients.gigitse.com"
+              href="https://clients.gigitise.com"
               onClick={() =>
                 createEvent("Gigitise Open", "Click", "Get started")
               }

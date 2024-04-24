@@ -123,7 +123,7 @@ const Comprehensive = () => {
       <div className="btn-container">
         <a
           target="_blank"
-          href="https://clients.gigitse.com"
+          href="https://clients.gigitise.com"
           className="btn--blue_220 w-button"
           onClick={() =>
             createEvent("Gigitise Open", "Click", "Find Freelancers")

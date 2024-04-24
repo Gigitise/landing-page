@@ -35,12 +35,11 @@ const Reviews = () => {
         ))}
       </div>
       <a
-        href="https://clients.gigitse.com/create-task"
+        href="https://clients.gigitise.com/create-task"
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => createEvent("Gigitise Open", "Click", "Create Gig")}
       >
-
         <button className=" mt-12 btn--blue_220 w-button">Create gig</button>
       </a>
     </div>

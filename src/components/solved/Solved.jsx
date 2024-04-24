@@ -30,9 +30,8 @@ const Solved = () => {
               createEvent("Gigitise Open", "Click", "Check library")
             }
             target="_blank"
-            href="https://clients.gigitse.com/solved"
+            href="https://clients.gigitise.com/solved"
           >
-
             Check Library
           </a>
         </button>

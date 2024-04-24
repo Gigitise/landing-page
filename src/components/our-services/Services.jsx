@@ -32,11 +32,10 @@ const Services = () => {
                           createEvent("Gigitise Open", "Click", "View Service")
                         }
                         target="_blank"
-                        href="https://clients.gigitse.com"
+                        href="https://clients.gigitise.com"
                       >
                         View service
                       </a>
-
                     </button>
                   </div>
                 </div>
@@ -49,8 +48,7 @@ const Services = () => {
                 <div className="flex items-center justify-center mt-4">
                   <a
                     target="_blank"
-                    href="https://clients.gigitse.com"
-
+                    href="https://clients.gigitise.com"
                     className="text-sky-600 py-2 px-4 border view-more"
                     onClick={() =>
                       createEvent(
