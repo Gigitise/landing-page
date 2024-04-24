@@ -9,6 +9,6 @@ RUN npm run build
 
 FROM nginx:alpine
 
-COPY --from=builder /landing_page/dist /var/www/landing
+COPY --from=builder /landing_page/dist /var/www/gigitise.com
 
-COPY ././nginx/default.conf /etc/nginx/conf.d/default.conf
+# COPY ./nginx/gigitise.com /etc/nginx/sites-available
