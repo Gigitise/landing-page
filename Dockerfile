@@ -11,4 +11,4 @@ FROM nginx:alpine
 
 COPY --from=builder /landing_page/dist /var/www/gigitise.com
 
-# COPY ./nginx/gigitise.com /etc/nginx/sites-available
+COPY ./nginx/gigitise.com /etc/nginx/sites-available
